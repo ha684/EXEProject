@@ -1,0 +1,2841 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title> SOLIS
+</title>
+    <meta http-equiv="content-language" content="vi"/>
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=5.0, user-scalable=1"/>
+    <meta name="csrf-token" content="ZVp9l8Jq9L8wmBqJ48vsRSw0oZ5c3STNLDYSvy59">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google-site-verification" content="qXXUA_R1uoDBf-1WE-ghxdEO6pirYuP-yDVB5iqytRg"/>
+    <meta name="facebook-domain-verification" content="4w08w6rk0e6sojaci5ix41vcdlh97t"/>
+
+    <meta name="author" content="SOLIS
+"/>
+    <meta name="description" content="SOLIS
+"/>
+    <meta name="robots" content="index,follow"/>
+
+    <link rel="icon" href="assets/img/logo.png" type="image/png"/>
+    <meta property="og:title" content="SOLIS
+"/>
+    <meta property="og:description" content="SOLIS
+"/>
+    <meta property="og:image" content="assets/img/logo.png
+"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="SOLIS"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image:type" content=".jpg"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="628"/>
+
+    <meta property="fb:app_id" content="1768213996826394"/>
+    <meta property="fb:admins" content="100004908811327"/>
+    <meta property="fb:admins" content="1725907325"/>
+
+    <!-- preconnect stuffs -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+    <link rel="preconnect" href="https://i.ytimg.com" crossorigin>
+    <link rel="preconnect" href="https://i9.ytimg.com" crossorigin>
+    <link rel="preconnect" href="https://s.ytimg.com" crossorigin>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:700&display=swap" as="style"
+          onload="this.onload=null;this.rel='stylesheet'" media="screen">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:700&display=swap"
+              media="screen">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'" media="screen">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+              media="screen">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'" media="screen">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+              media="screen">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'" media="screen">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap"
+              media="screen">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" as="style"
+          onload="this.onload=null;this.rel='stylesheet'" media="screen">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap"
+              media="screen">
+    </noscript>
+
+    <link rel="stylesheet"
+          href="https://dungmori.b-cdn.net/plugin/driver/driver.min.css?1724647351"/>
+    <link rel="stylesheet" href="https://dungmori.b-cdn.net/plugin/toastr/toastr.min.css"/>
+
+    <link rel="preload" href="https://dungmori.b-cdn.net/css/base.css?1740539523" as="style"
+          onload="this.onload=null;this.rel='stylesheet'" media="screen">
+    <noscript>
+        <link rel="stylesheet" href="https://dungmori.b-cdn.net/css/base.css?1740539523" media="screen">
+    </noscript>
+    <link rel="preload" href="https://dungmori.b-cdn.net/css/plugins.css?1725437303" as="style"
+          onload="this.onload=null;this.rel='stylesheet'" media="screen">
+    <noscript>
+        <link rel="stylesheet" href="https://dungmori.b-cdn.net/css/plugins.css?1725437303" media="screen">
+    </noscript>
+    <link rel="stylesheet" href="https://dungmori.b-cdn.net/assets/css/styles.css?1740016633"
+          media="screen">
+    <script src="https://dungmori.b-cdn.net/assets/js/headlibs.js?1721188598"></script>
+    <script src="https://dungmori.b-cdn.net/plugin/socket-io-4.1.2/socket.io.min.js?1724647351"></script>
+    <script type="text/javascript">
+        var userCurrent = null;
+    </script>
+        <link rel="stylesheet" href="https://dungmori.b-cdn.net/plugin/element-ui/element-ui.min.css">
+
+    <style lang="scss">
+        .complex-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 5px 20px;
+            color: white;
+            text-shadow: 2px 2px rgb(116, 116, 116);
+            text-transform: uppercase;
+            cursor: pointer;
+            border: solid 2px black;
+            letter-spacing: 1px;
+            font-weight: 600;
+            font-size: 17px;
+            background-color: #f7931e;
+            border-radius: 50px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+
+        .complex-button:active {
+            transform: scale(0.9);
+            transition: all 100ms ease;
+        }
+
+        .complex-button img {
+            height: 50px;
+            transition: all 0.5s ease;
+            z-index: 2;
+        }
+
+        .play {
+            transition: all 0.5s ease;
+            transition-delay: 300ms;
+        }
+
+        .complex-button:hover img {
+            transform: scale(3) translate(100%);
+        }
+
+        .now {
+            position: absolute;
+            left: 0;
+            transform: translateX(-100%);
+            transition: all 0.5s ease;
+            z-index: 2;
+            font-size: 30px;
+        }
+
+        .complex-button:hover .now {
+            font-family: Montserrat, Arial, sans-serif;
+            font-weight: bold;
+            transform: translateX(30px);
+            transition-delay: 300ms;
+        }
+
+        .complex-button:hover .play {
+            transform: translateX(200%);
+            transition-delay: 300ms;
+        }
+
+        .wheel {
+            background: url("https://dungmori.b-cdn.net/assets/img/new_home/06-2024/pattern.svg") no-repeat center center;
+        }
+
+        .wheel-wrapper {
+            position: relative;
+        }
+
+        .wheel-item {
+            width: 120px;
+
+            .wheel-avatar {
+                width: 120px;
+            }
+
+            .wheel-feedback {
+                height: 110%;
+                margin-top: -5%;
+                width: 400px;
+            }
+
+            .wheel-feedback-container {
+                background-color: #fff;
+                padding-right: 0;
+            }
+
+            .wheel-feedback-name {
+                color: #57D061;
+            }
+
+            .wheel-feedback-job {
+                color: #07403F;
+            }
+
+            .wheel-feedback-content {
+                display: none;
+            }
+
+            &.active {
+                .wheel-avatar {
+                    transform: scale3d(1.33, 1.33, 1.33);
+                }
+
+                .wheel-feedback {
+                    height: 140%;
+                    margin-top: -20%;
+                    width: 65vw;
+                }
+
+                .wheel-feedback-container {
+                    background-color: #57D061;
+                    padding-right: 50px;
+                }
+
+                .wheel-feedback-content {
+                    display: block;
+                    color: #fff;
+                }
+
+                .wheel-feedback-name {
+                    color: #07403F;
+                }
+
+                .wheel-feedback-job {
+                    color: #fff;
+                }
+            }
+
+        }
+
+        .wheel-top,
+        .wheel-bottom {
+            .wheel-feedback {
+                height: 80%;
+                margin-top: 10%;
+            }
+
+            .wheel-avatar {
+                transform: scale3d(0.8, 0.8, 0.8);
+            }
+        }
+
+        .wheel-svg {
+            height: calc(80vh);
+            overflow: visible;
+            width: calc(80vh);
+            z-index: -1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .st0 {
+            fill: none;
+            stroke: #57D061;
+            stroke-width: 2;
+            stroke-miterlimit: 1;
+        }
+
+        .home-stats {
+            background-image: url('/assets/img/new_home/06-2024/stat-bg.jpg');
+        }
+
+        .vertical-dots {
+            right: 5px;
+            list-style: none;
+            display: block;
+            position: absolute;
+            top: 40%;
+            margin-top: -10px;
+            text-align: right;
+        }
+
+        .vertical-dots li {
+            position: relative;
+            width: 10px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .vertical-dots li button {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: transparent;
+        }
+
+        .vertical-dots li button:hover,
+        .vertical-dots li button:focus {
+            outline: none;
+        }
+
+        .vertical-dots li button:hover:before,
+        .vertical-dots li button:focus:before {
+            opacity: 1;
+        }
+
+        .vertical-dots li button:before {
+            font-family: 'slick';
+            font-size: 6px;
+            line-height: 20px;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 20px;
+            height: 20px;
+
+            content: '•';
+            text-align: center;
+
+            opacity: .25;
+            color: black;
+
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .vertical-dots li.slick-active button:before {
+            opacity: .75;
+            color: black;
+        }
+
+        .logos-slider-wrapper:before, .logos-slider-wrapper:after {
+            position: absolute;
+            top: 0;
+            content: '';
+            width: 30%;
+            height: 100%;
+            z-index: 2;
+            filter: grayscale(100%);
+        }
+
+        .logos-slider-wrapper:before {
+            left: 0;
+            background: linear-gradient(to left, rgba(240, 240, 240, 0), rgba(240, 240, 240, 1));
+        }
+
+        .logos-slider-wrapper:after {
+            right: 0;
+            background: linear-gradient(to right, rgba(240, 240, 240, 0), rgb(240, 240, 240));
+        }
+
+        #home-header-slider {
+            .image-holder {
+                background-repeat: no-repeat;
+                background-position: center bottom;
+                background-size: cover;
+            }
+
+            .slick-active .dot {
+                transform: translateX(-20px);
+                width: 40px;
+                height: 10px;
+                border-radius: 5px;
+                transform-origin: right;
+                margin: 0 4px;
+            }
+
+            .slick-dots {
+                display: flex;
+                position: absolute;
+                left: -40px;
+                top: 50%;
+                width: 100px;
+                height: 20px;
+                transform: rotate(90deg);
+
+                li {
+                    margin: 0 5px;
+                }
+            }
+
+            .dot {
+                width: 10px;
+                height: 10px;
+                background-color: #308560;
+                display: block;
+                border-radius: 50%;
+                transition: 0.15s ease-in-out;
+            }
+        }
+
+        .logos-slider {
+            .slick-track {
+                display: flex;
+            }
+
+            .slick-track .slick-slide {
+                display: flex;
+                height: auto;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .slick-active .dot {
+                transform: translateX(-20px);
+                width: 40px;
+                height: 10px;
+                border-radius: 5px;
+                transform-origin: right;
+                margin: 0 4px;
+            }
+
+            .slick-dots {
+                li {
+                    margin: 0 5px;
+                }
+            }
+
+            .dot {
+                width: 10px;
+                height: 10px;
+                background-color: #57D061;
+                display: block;
+                border-radius: 50%;
+                transition: 0.15s ease-in-out;
+            }
+        }
+
+        .feedback-slider {
+            .slick-initialized .slick-slide {
+                display: flex;
+            }
+        }
+
+        .active > [data-toggle="pill"] {
+            color: rgba(53, 53, 53, 1);
+        }
+
+        [data-toggle="pill"] {
+            color: rgba(53, 53, 53, 0.5);
+
+            &.active {
+                color: rgba(53, 53, 53, 1);
+            }
+
+            &:active {
+                color: rgba(53, 53, 53, 0.5);
+            }
+
+            &:hover {
+                color: rgba(53, 53, 53, 1)
+            }
+
+            &:focus {
+                color: rgba(53, 53, 53, 1);
+            }
+        }
+
+        @media (max-width: 1610px) {
+            .tc-container {
+                width: 100vw;
+            }
+
+            .tc-info {
+                width: 280px;
+            }
+
+            .tc-saying {
+                width: 320px;
+            }
+        }
+
+        img {
+            filter: blur(0);
+            transform: translateZ(0);
+            image-rendering: auto;
+        }
+
+        #application {
+            padding-top: 0;
+        }
+
+        #news_slick {
+            .slick-slide img {
+                margin-left: 0;
+            }
+
+            .slick-track {
+                height: 450px;
+            }
+        }
+    </style>
+
+    
+</head>
+<body>
+<div id="application" class="w-screen pb-20 lg:pb-0">
+
+    
+    <div class="hidden lg:flex fixed w-full top-0 py-[15px] left-0 bg-dmr-red h-[76px] z-[100] pc-header">
+    <div class="container">
+        <div class="header-inner">
+            <div class="header-logo">
+                <a href="http://127.0.0.1:5500/solis.com/index.html" class="logo1">
+                    <img class="lazyload object-cover"
+                         data-src="https://dungmori.b-cdn.net/assets/img/new_home/06-2024/dungmori-logo.svg" alt="dungmori-logo.svg"/>
+                </a>
+            </div>
+            <div class="header-menu font-beanbag">
+                <div class="header-menu__item text-[0.9em] xlg:text-lg">
+                    <a href="https://dungmori.com/ve-dungmori" class="!text-white hover:text-white active:text-white">Về
+                        SOLIS</a>
+                    
+                    <div class="header-menu__dropdown">
+                        <div class="header-menu__dropdown-inner bg-dmr-green text-white">
+                            <a href="https://docs.google.com/document/d/1ClQv5XMQXyepWK2TV7_0vJMIVVzZXcsZ7L_Oey-UIXE/edit?usp=sharing" class="header-menu__dropdown-item" target="_blank" >
+                                <div class="header-menu__dropdown-item-inner">
+                                    <div class="title">VỀ SOLIS</div>
+                                    <div class="description">Lịch sử hình thành và phát triển</div>
+                                </div>
+                            </a>
+                            <div onclick="goTo('https://docs.google.com/document/d/1ClQv5XMQXyepWK2TV7_0vJMIVVzZXcsZ7L_Oey-UIXE/edit?usp=sharing')"
+                                 class="header-menu__dropdown-item ">
+                                <div class="header-menu__dropdown-item-inner">
+                                    <div class="title">Tin tức</div>
+                                    <div class="description">Cập nhật tin tức và kiến thức</div>
+                                </div>
+                            </div>
+                            
+                            <div onclick="goTo('https://docs.google.com/document/d/1ClQv5XMQXyepWK2TV7_0vJMIVVzZXcsZ7L_Oey-UIXE/edit?usp=sharing')"
+                                 class="header-menu__dropdown-item ">
+                                <div class="header-menu__dropdown-item-inner">
+                                    <div class="title">Giáo viên</div>
+                                    <div class="description">Đội ngũ giáo viên</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <a href="https://www.facebook.com/search/top/?q=nh%C3%B3m%20xu%E1%BA%A5t%20kh%E1%BA%A9u%20lao%20%C4%91%E1%BB%99ng" class="header-menu__item text-[0.9em] xlg:text-lg" target="_blank">
+                    <span>Cộng đồng</span>
+                </a>
+
+                <div class="header-menu__item text-[0.9em] xlg:text-lg">
+                    <span>Learn</span>
+                    <div class="header-menu__dropdown mega">
+                        <div class="header-menu__dropdown-inner flex">
+                            <ul class="menu-column border-right w-0.3 flex-shrink-0" role="tablist">
+                                <li class="header-menu__dropdown-item">
+                                    <a href="#kaiwa" class="dropdown-parent header-menu__dropdown-item-inner"
+                                       role="presentation" data-toggle="pill">
+                                        <div class="flex">
+                                            <div class="">
+                                                <div class="title text-white"
+                                                     onclick="goToWindow('https://meet.google.com/landing')">
+                                                    Học qua Zoom hoặc Google-Meet
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="menu-column tab-content flex-grow-1" role="tablist">
+                                <div class="tab-pane active in min-h-full" id="jlpt">
+                                    <div class="flex">
+                                        <ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane min-h-full" id="kaiwa">
+                                    <div class="px-4">
+                                        <img src="https://dungmori.com/assets/img/new_home/06-2024/menu_2.png"/>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="tab-pane min-h-full" id="">
+                                    <div class="px-4">
+                                        <img src="https://dungmori.com/assets/img/new_home/06-2024/menu_1.png"/>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex justify-end items-center gap-3">
+                
+
+                <a href="https://docs.google.com/document/d/1SWZd1B1gYb6OMxtPLlGYvgHg1YTlxeMy7vd2SiRM1xw/edit?usp=sharing" target="_blank"
+                   class="cursor-pointer text-white stroke-current fill-current hover:text-dmr-green-dark icon-color"
+                   onclick="ga('send', 'event', 'Menu', 'click', 'Store')">
+                   <div class="tooltip-i">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="w-4">
+                            <path d="M1.02191 1.28948H22.6139V20.2245C22.6139 21.6919 21.4243 22.8815 19.957 22.8815H3.67886C2.21146 22.8815 1.02191 21.6919 1.02191 20.2245V1.28948Z"
+                                stroke-width="2.5"/>
+                            <path d="M5.41602 7.4082C7.5498 11.2654 13.0484 16.6656 17.9725 7.4082" stroke-width="2.5"/>
+                        </svg>
+                        <span class="tooltiptext">Cửa hàng</span>
+                    </div>
+                </a>
+                <div id="maintain-container" style="display: none;background: none; text-align: center;">
+                    <img class="lazyload object-cover" data-src="https://dungmori.b-cdn.net/assets/img/new_home/maintain-web.png"
+                         alt="" style="max-width: 50%; margin: auto;">
+                </div>
+                <style>
+                    #jlpt-gift-container {
+                        display: none;
+                        background: none;
+                        text-align: center;
+                    }
+
+                    #jlpt-gift-container .jlpt-gift-content {
+                        background: white;
+                        border-radius: 15px;
+                    }
+
+                    #jlpt-gift-container .jlpt-gift-content > p {
+                        font-family: 'Quicksand';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 30px;
+                        line-height: 1.61;
+                        text-transform: uppercase;
+                    }
+
+                    #jlpt-gift-container .jlpt-gift-content > p:nth-child(2) {
+                        font-weight: bold;
+                        color: #96D962;
+                    }
+
+                    #jlpt-gift-container .jlpt-gift-content .quote {
+                        width: 388px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 1.61;
+                        margin-top: 20px;
+                    }
+
+                    .jlpt-gift-content .btn {
+                        margin-top: 30px;
+                        padding: 15px 34px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 1.2;
+                        color: #FFFFFF;
+                        border-radius: 15px;
+                    }
+
+                    .jlpt-gift-content .btn-danger {
+                        background-color: #FB6D3A;
+                        margin-right: 20px;
+                    }
+
+                    .jlpt-gift-content .btn-info {
+                        background-color: #1093F1;
+                    }
+
+                    .jlpt-gift-policy {
+                        margin-left: 24px;
+                        max-width: 350px;
+                        text-align: left;
+                    }
+
+                    .jlpt-gift-policy .uppercase {
+                        text-transform: uppercase;
+                    }
+
+                    .jlpt-gift-policy .text-red {
+                        color: #FB6D3A;
+                    }
+
+                    .jlpt-gift-policy .text-blue {
+                        color: #0E65E5;
+                    }
+
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    .btn-upload {
+                        font-family: Quicksand;
+                        background: #F7FFF0;
+                        border: 1px solid #96D962;
+                        border-radius: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 8px 50px;
+                        gap: 10px;
+                        color: green !important;
+                        font-size: 16px !important;
+                        font-weight: 400 !important;
+                        margin-top: 0 !important;
+                    }
+
+                    .point-input {
+                        position: relative;
+                    }
+
+                    .point-label {
+                        position: absolute;
+                        top: -10px;
+                        left: 9px;
+                        background: white;
+                        color: #BDBDBD !important;
+                    }
+
+                    .fancybox-slide:before {
+                        height: 0 !important;
+                    }
+
+                    @media only screen and (max-width: 992px) {
+                        .two-columns {
+                            flex-flow: column;
+                            align-items: center;
+                        }
+
+                        .jlpt-gift-content {
+                            /*padding: 40px 5px;*/
+                        }
+
+                        .fancybox-slide > * {
+                            padding: 0;
+                        }
+                    }
+
+                    #point-input-1,
+                    #point-input-2,
+                    #point-input-3,
+                    #point-input-total {
+                        font-weight: bold;
+                        font-size: 13px;
+                        border-bottom: 1px solid #000;
+                        width: 5%;
+                        text-align: right;
+                        line-height: 1;
+                    }
+                </style>
+
+<div class="login-container" id="auth-container" style="display: none;">
+  <div class="flex flex-row p-4 font-averta">
+    <div class="flex-1 flex justify-center items-center xl:pt-0 pt-5">
+      <div id="login-content" class="auth-content xl:w-[310px] w-full xl:px-0 px-3">
+        <form id="login-form" accept-charset="UTF-8" class="form-horizontal">
+          <input type="hidden" name="_token" value="ZVp9l8Jq9L8wmBqJ48vsRSw0oZ5c3STNLDYSvy59" autocomplete="off">
+          <div class="">
+            <label class="control-label"></label>
+            <div class="">
+              <div class="error-container">
+                <div class="alert-danger rounded py-0.5 px-2" style="display: none;" v-show="error != null"><i class="zmdi zmdi-alert-octagon"></i> {{ error }}</div>
+              </div>
+            </div>
+          </div>
+          <div class="auth-item">
+            <label class="control-label text-[#073A3B] m-0">Email</label>
+            <div class="mt-0.5">
+              <input id="email" class="form-control rounded-lg" type="email" name="email" v-on:click="hideError" placeholder="Email hoặc tên đăng nhập" autocomplete="off" required autofocus onkeypress="return enterToLogin(event, this)">
+            </div>
+          </div>
+          <div class="auth-item xl:mt-1 mt-2.5">
+            <label class="control-label text-[#073A3B] m-0">Mật khẩu</label>
+            <div class="mt-0.5">
+              <input id="password" type="password" class="form-control rounded-lg" name="password" v-on:click="hideError" placeholder="Mật khẩu" autocomplete="off" required onkeypress="return enterToLogin(event, this)">
+            </div>
+          </div>
+          <div class="hidden">
+            <div class="h-7.5">
+              <div class="checkbox">
+                <label for="login-remember" class="agree-policy block">
+                  <input id="login-remember" type="checkbox" name="remember" checked>
+                  <span class="save-login-info text-[#2D3748] flex items-center">Ghi nhớ đăng nhập</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6">
+            <button type="button" class="btn-login w-full bg-[#57D061] py-2 text-white rounded-full" id="login-submit" v-on:click="login">
+              <span v-show="buttonState == true">Đăng nhập</span>
+              <span v-show="buttonState == false"><i class="fa fa-spinner fa-pulse fa-fw"></i> Đang xác thực...</span>
+            </button>
+            <p class="mt-3 text-center"><a href="https://dungmori.com/password/reset" class="text-[#1E4AE9] cursor-pointer">Quên mật khẩu?</a></p>
+          </div>
+        </form>
+        <div class="flex flex-row items-center mt-6">
+          <div class="h-[1px] flex-1 bg-[#CFDFE2]"></div>
+          <div class="text-[#294957] mx-2.5">Hoặc đăng nhập với</div>
+          <div class="h-[1px] flex-1 bg-[#CFDFE2]"></div>
+        </div>
+        <div class="mt-6 flex flex-row">
+          <a href="https://dungmori.com/oauth/facebook" onclick="authBySocicalAccount()" title="Facebook" class="flex-1 text-black">
+            <div class="flex flex-row bg-[#F3F9FA] items-center justify-center py-1.5 rounded-lg cursor-pointer mr-2">
+              <img class="w-7 h-7 mr-1.5" src="https://dungmori.com/assets/img/new_home/06-2024/facebook.png" />
+              Facebook
+            </div>
+          </a>
+          <a href="https://dungmori.com/oauth/google"  onclick="authBySocicalAccount()" title="Google" class="flex-1 text-black">
+            <div class="flex flex-row bg-[#F3F9FA] items-center justify-center py-1.5 rounded-lg cursor-pointer ml-2">
+              <img class="w-7 h-7 mr-1.5" src="https://dungmori.com/assets/img/new_home/06-2024/google.png" />
+              Google
+            </div>
+          </a>
+        </div>
+        <div class="text-[#122B31] mt-6 text-center">
+          Bạn chưa có tài khoản? <span class="text-[#1E4AE9] cursor-pointer" onclick="swichTab('register')">Đăng ký ngay</span>
+        </div>
+      </div>
+
+      <div id="register-content" class="auth-content xl:w-[310px] hidden w-full xl:px-0 px-3">
+        <form id="register-form" accept-charset="UTF-8" class="form-horizontal">
+          <input type="hidden" name="_token" value="ZVp9l8Jq9L8wmBqJ48vsRSw0oZ5c3STNLDYSvy59" autocomplete="off">
+          <div class="">
+            <label class="control-label"></label>
+            <div class="">
+              <div class="error-container">
+                <div class="alert-danger rounded py-0.5 px-2" style="display: none;" v-show="error != null"><i class="zmdi zmdi-alert-octagon"></i> {{ error }}</div>
+              </div>
+            </div>
+          </div>
+          <div class="auth-item">
+            <label class="control-label text-[#073A3B] m-0">Họ và tên</label>
+            <div class="mt-0.5">
+              <input type="text" class="form-control rounded-lg" name="name" id="register-name" v-on:click="hideError" placeholder="Họ và tên" autocomplete="off" required>
+            </div>
+          </div>
+          <div class="auth-item xl:mt-0 mt-2.5">
+            <label class="control-label text-[#073A3B] m-0">Email</label>
+            <div class="mt-0.5">
+              <input type="email" class="form-control" name="email" id="register-email" v-on:click="hideError" placeholder="Email" autocomplete="off" required>
+            </div>
+          </div>
+          <div class="auth-item xl:mt-0 mt-2.5">
+            <label class="control-label text-[#073A3B] m-0">Mật khẩu</label>
+            <div class="mt-0.5">
+              <input type="password" class="form-control" name="password" id="register-password" v-on:click="hideError" placeholder="Mật khẩu" autocomplete="off" required>
+            </div>
+          </div>
+          <div class="auth-item xl:mt-0 mt-2.5">
+            <label class="control-label text-[#073A3B] m-0">Nhập lại mật khẩu</label>
+            <div class="mt-0.5">
+              <input type="password" class="form-control" name="password_confirm" id="register-password-confirm" v-on:click="hideError" placeholder="Nhập lại mật khẩu" autocomplete="off" required>
+            </div>
+          </div>
+          <div class="hidden">
+            <div class="h-7.5">
+              <div class="checkbox">
+                <label for="register-remember" class="agree-policy block">
+                  <input id="register-remember" type="checkbox" name="remember" checked>
+                  <span class="save-login-info text-[#2D3748] flex items-center">Ghi nhớ đăng nhập</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2">
+            <div class="text-[#2D3748]">
+               <div class="checkbox" style="margin-top: 0; padding-top: 0;">
+                 <label for="agree-checkbox" class="agree-policy text-xs">
+                    <input id="agree-checkbox" type="checkbox" name="agreement" checked>
+                    <span class="agree-policy-info">Tôi đồng ý với mọi <a href="https://dungmori.com/trang/dieu-khoan-su-dung" class="text-[#1E4AE9]" target="_blank">điều khoản</a> và <a href="https://dungmori.com/trang/chinh-sach-bao-mat" class="text-[#1E4AE9]" target="_blank">chính sách</a></span>
+                 </label>
+             </div>
+            </div>
+         </div>
+          <div class="mt-4">
+            <button type="button" class="btn-register w-full bg-[#57D061] py-2 text-white rounded-full" id="register-submit" v-on:click="register" style="border: none;">
+              <span v-show="buttonState == true">Đăng ký</span>
+              <span v-show="buttonState == false"><i class="fa fa-spinner fa-pulse fa-fw"></i> Đang xác thực...</span>
+            </button>
+          </div>
+        </form>
+        <div class="flex flex-row items-center mt-6">
+          <div class="h-[1px] flex-1 bg-[#CFDFE2]"></div>
+          <div class="text-[#294957] mx-2.5">Hoặc đăng nhập với</div>
+          <div class="h-[1px] flex-1 bg-[#CFDFE2]"></div>
+        </div>
+        <div class="mt-6 flex flex-row text-black">
+          <a href="https://dungmori.com/oauth/facebook" onclick="authBySocicalAccount()" title="Facebook" class="flex-1 text-black">
+            <div class="flex flex-row bg-[#F3F9FA] items-center justify-center py-1.5 rounded-lg cursor-pointer mr-2">
+              <img class="w-7 h-7 mr-1.5" src="https://dungmori.com/assets/img/new_home/06-2024/facebook.png" />
+              Facebook
+            </div>
+          </a>
+          <a href="https://dungmori.com/oauth/google"  onclick="authBySocicalAccount()" title="Google" class="flex-1 text-black">
+            <div class="flex flex-row bg-[#F3F9FA] items-center justify-center py-1.5 rounded-lg cursor-pointer ml-2">
+              <img class="w-7 h-7 mr-1.5" src="https://dungmori.com/assets/img/new_home/06-2024/google.png" />
+              Google
+            </div>
+          </a>
+        </div>
+        <div class="text-[#122B31] mt-6 text-center">
+          Bạn đã có tài khoản? <span class="text-[#1E4AE9] cursor-pointer" onclick="swichTab('login')">Đăng nhập ngay</span>
+        </div>
+      </div>
+    </div>
+    <img class="flex-1 auth-image xl:block hidden" src="https://dungmori.com/assets/img/new_home/06-2024/auth_co_thanh.png" />
+  </div>
+</div>
+                    <div class="flex items-center gap-1 bg-[#EC6E23] border-2 border-white rounded-[50px] py-2 px-5 text-white auth-button">
+                        <div data-fancybox data-animation-duration="300" data-src="#auth-container"
+                             class="cursor-pointer no-underline uppercase font-semibold">
+                            <div class="text-white" id="text-login"
+                                 onclick="ga('send', 'event', 'Menu', 'click', 'Login'); swichTab('login')">Đăng nhập
+                            </div>
+                        </div>
+                        <span>/</span>
+                        <div data-fancybox data-animation-duration="300" data-src="#auth-container"
+                             class="!text-white cursor-pointer no-underline uppercase font-semibold">
+                            <div class="text-white" id="text-register"
+                                 onclick="ga('send', 'event', 'Menu', 'click', 'Register'); swichTab('register')">Đăng
+                                ký
+                            </div>
+                        </div>
+                    </div>
+                
+                <script type="text/javascript">
+                    function showChatbox() {
+                        if (typeof chatbox !== 'undefined' && chatbox) {
+                            chatbox.initChat();
+                            $("#chat-box").css('display', 'flex');
+                            $("#mess-input").focus();
+                            chatbox.goToBottom();
+                        }
+                    }
+                                        var chatUser = localStorage.getItem('incognito_user');
+                    if (chatUser) {
+                        chatUser = parseInt(chatUser);
+                    } else {
+                        chatUser = (Math.floor(Math.random() * 1000000) + 1) * -1;
+                        localStorage.setItem('incognito_user', chatUser);
+                    }
+                                        if (chatUser) {
+                        var socketServer = "wss://chat.dungmori.com";
+
+                        var socket = io.connect(socketServer, {
+                            query: {
+                                type: 'user',
+                                from: 'web',
+                                userId: chatUser
+                            }
+                        });
+
+                        // Check receive new message
+                                                socket.on('send_new_message', async function (message) {
+                            if (typeof chatbox !== 'undefined') {
+                                chatbox.receiveNewMsg(message);
+                            }
+                            if (typeof notiCount !== 'undefined') {
+                                notiCount.updateMessageCount(message);
+                            }
+                            if (message && parseInt(message.receiverId) == chatUser) {
+                                if ($('#chat-box').css('display') === 'none') {
+                                    showChatbox();
+                                    chatbox.goToBottom();
+                                }
+                            }
+                        });
+                        
+                        socket.on('send_new_message_group_enc', async function (message) {
+                            if (typeof chatbox !== 'undefined') {
+                                message = JSON.parse(dmsg(message));
+                                chatbox.receiveNewMsg(message);
+                            }
+                            if (typeof notiCount !== 'undefined') {
+                                notiCount.updateMessageCount(message);
+                            }
+                        });
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <div id="default_page">
+            <!-- Modal của Bootstrap -->
+
+    <div id="container_home_2024" v-cloak>
+        <div class="w-full h-[56.25vw] bg-[#F0F0F0] mt-[60px] xl:mt-0">
+            <div id="home-header-slider" class="w-full h-[56.25vw] relative">
+                                                            <div class="slick-slide w-full h-[56.25vw]">
+                        <a class="block w-full h-[56.25vw] image-holder bg-cover bg-center bg-no-repeat"
+                           href=""
+                           style="background-image: url('/solis.com/cdn/qc/default/sea-1547609_1280.jpg')"></a>
+                        </div>
+                                                </div>
+        </div>
+        <div class="bg-[#F0F0F0] py-6 xl:py-20 relative floating-container px-2 xl:px-0">
+            <img src="https://dungmori.b-cdn.net/assets/img/new_home/06-2024/flower.svg" alt=""
+                 class="floating w-10 h-10 parallax-bg absolute top-[500px] left-0 z-[2]" data-speed=".4">
+            <img src="https://dungmori.b-cdn.net/assets/img/new_home/06-2024/play.svg" alt="Học qua nền tảng App/Website, Zoom"
+                 class="floating w-10 h-10 parallax-bg absolute top-[600px] left-[200px] z-[2]" data-speed=".45">
+            <img src="https://dungmori.b-cdn.net/assets/img/new_home/06-2024/flower-outline.svg" alt="Học trực tiếp tại các cơ sở"
+                 class="floating w-10 h-10 parallax-bg absolute top-[1000px] right-[100px] z-[2]" data-speed=".25">
+            <img src="https://dungmori.b-cdn.net/assets/img/new_home/06-2024/heart.svg"
+                 alt="Luyện thi kì thi vào các trường đại học tại Nhật"
+                 class="floating w-10 h-10 parallax-bg absolute top-[1500px] left-[300px] xl:left-[30px] z-[2]"
+                 data-speed=".35">
+            <img src="https://dungmori.b-cdn.net/assets/img/new_home/06-2024/heart.svg"
+                 alt="Cung cấp giáo trình luyện JLPT, Giao tiếp"
+                 class="floating w-10 h-10 parallax-bg absolute top-[1.2%] lg:top-[2%] left-[calc(70%)] lg:left-[calc(65%)] z-[2]"
+                 data-speed=".2">
+
+                <section id="free-trial-section" class="container mx-auto">
+                <div
+                    class="w-auto xl:!w-[1300px] flex flex-col md:flex-row items-center md:items-end gap-5 font-beanbag mt-2 xl:mt-5 px-2 lg:px-0"
+                >
+                    <div class="w-full xl:w-1/3 box-wrapper">
+                    <div class="pr-3 xl:pr-10">
+                        <a
+                        href="https://example.com"
+                        class="test-box block bg-dmr-green-dark py-2 text-white text-xl xl:text-[32px] rounded-2xl text-center relative transition-transform duration-500"
+                        >
+                        <span class="capitalize">Học thử miễn phí</span>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                </section>
+    </div>
+    </div>
+
+    
+    <div class="chat-box" id="chat-box">
+    <div v-show="showConversationList" class="conversation-list">
+        <div class="chat-top">
+            <div class="admin-item chat-title-box flex flex-row justify-between">
+                                <div class="font-normal text-sm cursor-pointer" @click="readAll">
+                    <i class="fa fa-check" aria-hidden="true"></i> Đã đọc
+                </div>
+                                <div v-if="!showConversationList" class="close-icon" v-on:click="hideChatbox"><svg class="svgIcon" height="16px" width="16px" version="1.1" viewBox="0 0 16 16" x="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" y="0px"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g transform="translate(-712.000000, -1096.000000)"><g stroke="#bec2c9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" transform="translate(709.000000, 320.000000)"><path d="M5.833,778.833 L16.167,789.167"></path><path d="M16.167,778.833 L5.833,789.167"></path></g></g></g></svg></div>
+            </div>
+        </div>
+        <div>
+            <input v-model="searchKey" class="search-con" type="text" placeholder="Tìm kiếm">
+            <i v-if="searchKey" class="fa fa-times-circle a-cursor-pointer clear-search" v-on:click="clearSearchConversation" v-cloak></i>
+            <div id="con-container" class="chat-container con-container" v-cloak>
+                <div
+                    v-for="(conversation, index) in listConversation"
+                    :key="conversation.id"
+                    class="flex con-item"
+                    :class="curConv && curConv.id == conversation.id ? 'con-item-border' : ''"
+                    :style="{ 'background-color': (conversation.is_group && conversation.last_message && conversation.last_message.id != conversation.last_message_id) || (!conversation.is_group && conversation.last_message &&  false  && !conversation.last_message.status) ? '#eaeaea' : '#fff' }"
+                    v-on:click="selectConversation(conversation)"
+                >
+                    <img v-if="conversation.fr_id && conversation.fr_avatar" class="user-avatar" :src="url + '/cdn/avatar/small/'+ conversation.fr_avatar" />
+                    <img v-else-if="conversation.fr_id" class="user-avatar" src="https://dungmori.com/assets/img/default-avatar.jpg" />
+                    <img v-else-if="conversation.avatar" class="user-avatar" :src="url + '/cdn/community/small/'+ conversation.avatar" />
+                    <img v-else class="user-avatar" src="https://dungmori.com/assets/img/admin-ava.png" />
+                    <div class="flex flex-col con-info">
+                        <div class="flex">
+                            <span v-if="conversation.fr_name" class="user-name">{{ conversation.fr_name }}</span>
+                            <span v-else-if="conversation.fr_id" class="user-name">Noname</span>
+                            <span
+                                v-else-if="conversation.is_group"
+                                class="user-name"
+                                style="-webkit-box-orient: vertical;"
+                                :title="conversation.title"
+                            >
+                                {{ conversation.title ? conversation.title : "Chat group" }}
+                            </span>
+                            <span v-else class="user-name">AI Support</span>
+                            <span v-if="conversation.last_message" class="flex items-center time-last-msg">
+                                {{ conversation.last_message.created_at }}
+                            </span>
+                        </div>
+                        <span v-if="conversation.last_message && conversation.last_message.type == 'text'" class="last-msg" style="-webkit-box-orient: vertical;">
+                            {{ conversation.last_message.content }}
+                        </span>
+                        <span v-else-if="conversation.last_message && conversation.last_message.type == 'image'" class="last-msg">
+                            [Hình ảnh]
+                        </span>
+                        <span v-else-if="conversation.last_message && conversation.last_message.type == 'file'" class="last-msg">
+                            [File]
+                        </span>
+                    </div>
+                </div>
+                <div v-if="!endOfConversation" class="text-center">
+                    <img style="width: 15px;" src="https://dungmori.com/assets/img/fbload.gif"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-container" v-if="curConv != null" v-cloak>
+        <div class="chat-top">
+            <div class="admin-item">
+                <i v-if="!showConversationList && (listConversation.length > 1 || searchKey != '' || notReadFilter)" class="fa fa-arrow-left back-icon" aria-hidden="true" v-on:click="backChat()"></i>
+                <div>
+                    <img v-if="curConv.avatar && curConv.is_group" class="admin-img" :src="url + '/cdn/community/small/'+ curConv.avatar" />
+                    <img v-else-if="curConv.fr_id && curConv.fr_avatar" class="admin-img" :src="url + '/cdn/avatar/small/'+ curConv.fr_avatar" />
+                    <img v-else-if="curConv.fr_id" class="admin-img" src="https://dungmori.com/assets/img/default-avatar.jpg" />
+                    <img v-else class="admin-img" src="https://dungmori.com/assets/img/admin-ava.png"/>
+                    <span v-if="!curConv.fr_id && !curConv.is_group" class="admin-active"></span>
+                </div>
+                <div v-if="curConv.is_group" class="group-name-box flex">
+                    <input v-if="isEditGroupName" id="edit_group_name" v-model="groupName" v-on:keyup.enter="saveGroupName" class="edit-group-name" type="text" placeholder="Tên nhóm">
+                    <span v-else class="admin-name group-name" style="-webkit-box-orient: vertical;">{{ curConv.title }}</span>
+                                    </div>
+                <div v-else-if="curConv.fr_name" class="flex-1 flex flex-col pt-1">
+                    <span class="admin-name leading-[15px]"> &nbsp;{{ curConv.fr_name }}</span>
+                    <span v-if="curConv.fr_email" class="text-[13px] font-normal pl-[3px]"> &nbsp;{{ curConv.fr_email }}</span>
+                </div>
+                <div v-else-if="curConv.fr_id" class="flex-1 flex flex-col pt-1">
+                    <span class="admin-name leading-[15px]"> &nbsp;Noname</span>
+                    <span v-if="curConv.fr_email" class="text-[13px] font-normal pl-[3px]"> &nbsp;{{ curConv.fr_email }}</span>
+                </div>
+                <span v-else class="admin-name"> &nbsp;AI Support <i class="zmdi zmdi-check-circle" style="color: #578fff; font-size: 13px;"></i></span>
+                                <i
+                    v-if="curConv.is_group"
+                    class="fa fa-ellipsis-v group-chat-manager a-cursor-pointer"
+                    aria-hidden="true"
+                    v-on:click="settingOpen = !settingOpen"
+                ></i>
+                <div class="close-icon" v-on:click="hideChatbox"><svg class="svgIcon" height="16px" width="16px" version="1.1" viewBox="0 0 16 16" x="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" y="0px"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g transform="translate(-712.000000, -1096.000000)"><g stroke="#bec2c9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" transform="translate(709.000000, 320.000000)"><path d="M5.833,778.833 L16.167,789.167"></path><path d="M16.167,778.833 L5.833,789.167"></path></g></g></g></svg></div>
+            </div>
+        </div>
+        <div v-if="settingOpen" class="group-chat-setting">
+            <div class="flex items-center a-cursor-pointer setting-item hover:bg-gray-100" v-on:click="copyLink">
+                <i class="fa fa-link" aria-hidden="true"></i>
+                <div>Copy link</div>
+            </div>
+            <div class="flex items-center a-cursor-pointer setting-item hover:bg-gray-100" v-on:click="openSearchMsgModal">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <div>Tìm tin nhắn</div>
+            </div>
+                        <div class="flex items-center a-cursor-pointer setting-item hover:bg-gray-100" v-on:click="showPeople">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <div>Thành viên nhóm</div>
+            </div>
+                                            </div>
+        <div v-if="curConv && curConv.is_group && pinMessages.length > 0" id="pin_container" class="pin-container">
+            <div v-if="pinMessages.length > 1" class="show-full-icon">
+                <i v-if="showFullPin" class="fa fa-angle-up a-cursor-pointer" aria-hidden="true" v-on:click="changeFullPinState"></i>
+                <i v-else class="fa fa-angle-down a-cursor-pointer" aria-hidden="true" v-on:click="changeFullPinState"></i>
+            </div>
+            <div v-if="showFullPin">
+                <div
+                    v-for="(pinMsg, index) in pinMessages"
+                    :key="'pin' + pinMsg.id"
+                    class="pin-item"
+                    v-bind:style="index == 0 ? 'border: 0' : ''"
+                >
+                    <div v-if="pinMsg.showFull">
+                                                <div
+                            class="a-cursor-pointer display-content"
+                            v-html="renderContent(pinMsg)"
+                            v-on:click="changePinState(index)"></div>
+                    </div>
+                    <div v-else class="flex items-center">
+                                                <div
+                            v-if="pinMsg.type == 'text'"
+                            class="pin-item-content a-cursor-pointer"
+                            style="-webkit-box-orient: vertical;"
+                            v-html="renderContent(pinMsg)"
+                            v-on:click="changePinState(index)">
+                        </div>
+                        <div v-if="pinMsg.type == 'image'" class=" flex-1 flex items-center pin-image">
+                            <div class="flex-1 flex">Hình ảnh</div>
+                            <a
+                                v-for="(img, index) in pinMsg.content"
+                                :key="'pin_img' + img"
+                                data-fancybox="images"
+                                :href="'https://dungmori.com/cdn/conversation/default' + '/' + img"
+                            >
+                                <img :src="'https://dungmori.com/cdn/conversation/small' + '/' + img">
+                            </a>
+                        </div>
+                        <div v-if="pinMsg.type == 'file'" class=" flex-1 flex flex-col justify-content-center pin-image pin-file">
+                            <a
+                                v-for="(file, index) in pinMsg.content"
+                                :key="'pin_file' + index"
+                                :href="'https://dungmori.com/upload/chat_file' + '/' + file"
+                                class="a-cursor-pointer"
+                                style="-webkit-box-orient: vertical;"
+                                download
+                            >{{ file }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div v-else class="pin-first">
+                <div v-if="pinMessages[0].showFull">
+                                        <div
+                        class="a-cursor-pointer display-content"
+                        v-html="renderContent(pinMessages[0])"
+                        v-on:click="changePinState(0)"
+                    ></div>
+                </div>
+                <div v-else class="flex items-center">
+                                        <div
+                        v-if="pinMessages[0].type == 'text'"
+                        class="pin-item-content a-cursor-pointer"
+                        v-html="renderContent(pinMessages[0])"
+                        style="-webkit-box-orient: vertical;"
+                        v-on:click="changePinState(0)"
+                    ></div>
+                    <div v-if="pinMessages[0].type == 'image'" class=" flex-1 flex items-center pin-image">
+                        <div class="flex-1">Hình ảnh</div>
+                        <a
+                            v-for="(img, index) in pinMessages[0].content"
+                            :key="'pin_full_img' + img"
+                            data-fancybox="images"
+                            :href="'https://dungmori.com/cdn/conversation/default' + '/' + img"
+                        >
+                            <img :src="'https://dungmori.com/cdn/conversation/small' + '/' + img">
+                        </a>
+                    </div>
+                    <div v-if="pinMessages[0].type == 'file'" class=" flex-1 flex flex-col justify-content-center pin-image pin-file">
+                        <a
+                            v-for="(file, index) in pinMessages[0].content"
+                            :key="'pin_file' + index"
+                            :href="'https://dungmori.com/upload/chat_file' + '/' + file"
+                            class="a-cursor-pointer"
+                            style="-webkit-box-orient: vertical;"
+                            download
+                        >{{ file }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="chat-screen" class="chat-content chat-container">
+            <div
+                v-if="loadMoreState == true"
+                class="load-more"
+                :style="{ 'margin-top': curConv && curConv.is_group && pinMessages.length > 0 ? '30px' : '5px' }"
+                v-on:click="loadMoreMsg()"
+            >
+                <span v-show="loading == false">Cũ hơn</span>
+                <img v-show="loading == true" style="width: 15px;" src="https://dungmori.com/assets/img/fbload.gif"/>
+            </div>
+            <div
+                v-for="(item, index) in listMessages"
+                :key="'msg' + item.id"
+                :id="'item_container_' + item.id"
+                class="item-container"
+                v-bind:style="index == 0 && loadMoreState == false ? 'margin-top: 32px':''"
+            >
+                <div v-if="item.rootMessage" class="root-msg flex" :class="item.sender_id == curConv.user_id ? 'root-msg-right' : 'root-msg-left'">
+                    <p
+                        class="text-root-msg"
+                        v-if="item.rootMessage.type == 'text'"
+                        v-html="renderContent(item.rootMessage)"
+                        v-on:click="goToRootMsg(item.rootMessage.id)"
+                    ></p>
+                    <p v-if="item.rootMessage.type == 'image'" class="content ct-img img-root-msg">
+                        <a
+                            v-for="img in item.rootMessage.content"
+                            :key="'root' + img"
+                            data-fancybox="images"
+                            :href="'https://dungmori.com/cdn/conversation/default' + '/' + img"
+                        >
+                            <img :src="'https://dungmori.com/cdn/conversation/default' + '/' + img"/>
+                        </a>
+                    </p>
+                    <p v-if="item.rootMessage.type == 'file'" class="text-root-msg">
+                        <a
+                            v-for="(file, index) in item.rootMessage.content"
+                            :key="'root_file' + index"
+                            :href="'https://dungmori.com/upload/chat_file' + '/' + file"
+                            class="a-cursor-pointer"
+                            style="display: inline-block; -webkit-box-orient: vertical; color: #fff"
+                            download
+                        >{{ file }}</a>
+                    </p>
+                </div>
+                <div v-if="item.sender_id == curConv.user_id">
+                    <div :id="'chat-item-' + item.id" class="chat-item user-chat" v-bind:style="((index+1) < listMessages.length && listMessages[index+1].sender_type == 'admin') ? 'margin-bottom:10px' : ''">
+                        <span class="mess-time">{{ prettyDate(item.created_at) }}</span>
+                        <i class="fa fa-reply reply-icon a-cursor-pointer" aria-hidden="true" v-on:click="startReply(item)"></i>
+                                                <div v-if="item.type == 'text'" :id="'content_' + item.id" class="content">
+                            <span v-html="renderContent(item)"></span>
+                            <div v-if="curConv.is_group || curConv.friend_id" class="flex justify-content-center align-items-center like-box" :class="item.sender_id == curConv.user_id ? 'left-1' : 'right-1'">
+                                <div v-if="item.reaction_data && (JSON.parse(item.reaction_data)).length > 0" class="group relative inline-block">
+                                    <span class="like-number">{{ (JSON.parse(item.reaction_data)).length }}</span>
+                                    <div
+                                      class="like-tooltip absolute left-1/2 z-20 -translate-x-1/2 whitespace-nowrap bg-gray-800 py-[3px] px-2 text-xs text-white rounded-md hidden"
+                                      :class="index === listMessages.length - 1 ? 'bottom-full mb-3' : 'top-full mt-3'"
+                                      v-html="showListLiked(item)"
+                                    >
+                                    </div>
+                                </div>
+                                <i class="fa like-icon" :class="item.liked ? 'fa-heart like-icon-red' : 'fa-heart-o'" aria-hidden="true" v-on:click="likeMessage(item)"></i>
+                            </div>
+                        </div>
+                        <div v-if="item.type == 'image'" class="content ct-img">
+                            <a data-fancybox="images" v-for="img in item.content" :key="'img' + img" :href="url + '/cdn/conversation/default/'+ img">
+                                <img :src="url + '/cdn/conversation/small/' + img"/>
+                            </a>
+                            <div v-if="curConv.is_group || curConv.friend_id" class="flex justify-content-center align-items-center like-box" :class="item.sender_id == curConv.user_id ? 'left-1' : 'right-1'">
+                                <div v-if="item.reaction_data && (JSON.parse(item.reaction_data)).length > 0" class="group relative inline-block">
+                                    <span class="like-number">{{ (JSON.parse(item.reaction_data)).length }}</span>
+                                    <div
+                                      class="like-tooltip absolute left-1/2 z-20 -translate-x-1/2 whitespace-nowrap bg-gray-800 py-[3px] px-2 text-xs text-white rounded-md hidden"
+                                      :class="index === listMessages.length - 1 ? 'bottom-full mb-3' : 'top-full mt-3'"
+                                      v-html="showListLiked(item)"
+                                    >
+                                    </div>
+                                </div>
+                                <i class="fa like-icon" :class="item.liked ? 'fa-heart like-icon-red' : 'fa-heart-o'" aria-hidden="true" v-on:click="likeMessage(item)"></i>
+                            </div>
+                        </div>
+                        <p v-else-if="item.type == 'file'" class="flex flex-col content ct-img ct-file">
+                            <a
+                                v-for="file in item.content"
+                                :href="'https://dungmori.com/upload/chat_file' + '/' + file"
+                                class="a-cursor-pointer"
+                                download
+                            >{{ file }}</a>
+                        </p>
+                    </div>
+                    <div v-if="item.seenUsers && item.seenUsers.length > 0" class="seen-user-box seen-user-box-left">
+                        <div
+                            v-for="(seenUser, index) in item.seenUsers"
+                            :key="'seen_user' + seenUser"
+                            :style="{ 'margin-left': index != 0 ? '3px' : '0' }"
+                        >
+                            <img
+                                v-if="people.find((p) => p.id == seenUser) && (people.find((p) => p.id == seenUser)).avatar"
+                                class="seen-avatar"
+                                :src="'https://dungmori.com/cdn/avatar/small' + '/' + (people.find((p) => p.id == seenUser)).avatar"
+                                :title="(people.find((p) => p.id == seenUser)).name"
+                            />
+                            <img
+                                v-else
+                                class="seen-avatar"
+                                src="https://dungmori.com/assets/img/default-avatar.jpg"
+                                :title="people.find((p) => p.id == seenUser) && (people.find((p) => p.id == seenUser)).name ? (people.find((p) => p.id == seenUser)).name : ''"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div v-else>
+                    <div class="chat-item admin-chat" :id="'chat-item-' + item.id" v-bind:style="((index+1) < listMessages.length && listMessages[index+1].sender_id != item.sender_id) ? 'margin-bottom:10px' : ''">
+                        <div class="avatar-flex">
+                            <div class="avatar" v-if="(index+1) < listMessages.length">
+                                <img
+                                    v-if="item.sender_type == 'admin'"
+                                    class="ad-avatar w-[30px] h-[30px] object-cover"
+                                    v-bind:style="listMessages[index+1].sender_id != item.sender_id ? '' : 'opacity: 0'"
+                                    src="https://dungmori.com/assets/img/admin-ava.png"
+                                    title="Dũng Mori"
+                                />
+                                <img
+                                    v-else-if="item.user_avatar"
+                                    class="ad-avatar w-[30px] h-[30px] object-cover"
+                                    v-bind:style="listMessages[index+1].sender_id != item.sender_id ? '' : 'opacity: 0'"
+                                    :src="'https://dungmori.com/cdn/avatar/small' + '/' + item.user_avatar"
+                                    :title="item.user_name"
+                                    v-on:click="goToChatUser(item)"
+                                />
+                                <img
+                                    v-else
+                                    class="ad-avatar w-[30px] h-[30px] object-cover"
+                                    v-bind:style="listMessages[index+1].sender_id != item.sender_id ? '' : 'opacity: 0'"
+                                    src="https://dungmori.com/assets/img/default-avatar.jpg"
+                                    :title="item.user_name"
+                                />
+                                <span v-if="item.is_tester" class="admin-active" v-bind:style="listMessages[index+1].sender_id != item.sender_id ? '' : 'opacity: 0'"></span>
+                            </div>
+                            <div class="avatar" v-if="(index+1) == listMessages.length">
+                                <img
+                                    v-if="item.sender_type == 'admin'"
+                                    class="ad-avatar w-[30px] h-[30px] object-cover"
+                                    src="https://dungmori.com/assets/img/admin-ava.png"
+                                    title="Dũng Mori"
+                                />
+                                <img
+                                    v-else-if="item.user_avatar"
+                                    class="ad-avatar w-[30px] h-[30px] object-cover"
+                                    :src="'https://dungmori.com/cdn/avatar/small' + '/' + item.user_avatar"
+                                    :title="item.user_name"
+                                />
+                                <img
+                                    v-else
+                                    class="ad-avatar w-[30px] h-[30px] object-cover"
+                                    src="https://dungmori.com/assets/img/default-avatar.jpg"
+                                    :title="item.user_name"
+                                />
+                                <span v-if="item.is_tester" class="admin-active"></span>
+                            </div>
+                        </div>
+                        <div v-if="item.type == 'text'" :id="'content_' + item.id" class="content">
+                            <span v-html="renderContent(item)"></span>
+                            <div v-if="curConv.is_group || curConv.friend_id" class="flex justify-content-center align-items-center like-box" :class="item.sender_id == curConv.user_id ? 'left-1' : 'right-1'">
+                                <div v-if="item.reaction_data && (JSON.parse(item.reaction_data)).length > 0" class="group relative inline-block">
+                                    <span class="like-number">{{ (JSON.parse(item.reaction_data)).length }}</span>
+                                    <div
+                                      class="like-tooltip absolute left-1/2 z-20 -translate-x-1/2 whitespace-nowrap bg-gray-800 py-[3px] px-2 text-xs text-white rounded-md hidden"
+                                      :class="index === listMessages.length - 1 ? 'bottom-full mb-3' : 'top-full mt-3'"
+                                      v-html="showListLiked(item)"
+                                    >
+                                    </div>
+                                </div>
+                                <i class="fa like-icon" :class="item.liked ? 'fa-heart like-icon-red' : 'fa-heart-o'" aria-hidden="true" v-on:click="likeMessage(item)"></i>
+                            </div>
+                        </div>
+                        <div v-if="item.type == 'image'" class="content ct-img">
+                            <a data-fancybox="images" v-for="img in item.content" :key="'main2' + img" :href="'https://dungmori.com/cdn/conversation/default' + '/' + img">
+                                <img :src="'https://dungmori.com/cdn/conversation/small' + '/' + img"/>
+                            </a>
+                            <div v-if="curConv.is_group || curConv.friend_id" class="flex justify-content-center align-items-center like-box" :class="item.sender_id == curConv.user_id ? 'left-1' : 'right-1'">
+                                <div v-if="item.reaction_data && (JSON.parse(item.reaction_data)).length > 0" class="group relative inline-block">
+                                    <span class="like-number">{{ (JSON.parse(item.reaction_data)).length }}</span>
+                                    <div
+                                      class="like-tooltip absolute left-1/2 z-20 -translate-x-1/2 whitespace-nowrap bg-gray-800 py-[3px] px-2 text-xs text-white rounded-md hidden"
+                                      :class="index === listMessages.length - 1 ? 'bottom-full mb-3' : 'top-full mt-3'"
+                                      v-html="showListLiked(item)"
+                                    >
+                                    </div>
+                                </div>
+                                <i class="fa like-icon" :class="item.liked ? 'fa-heart like-icon-red' : 'fa-heart-o'" aria-hidden="true" v-on:click="likeMessage(item)"></i>
+                            </div>
+                        </div>
+                        <div v-if="item.type == 'file'" class="flex flex-col content ct-img ct-file">
+                            <a
+                                v-for="file in item.content"
+                                :href="'https://dungmori.com/upload/chat_file' + '/' + file"
+                                class="a-cursor-pointer"
+                                download
+                            >{{ file }}</a>
+                        </div>
+                                                <i class="fa fa-reply reply-icon a-cursor-pointer" aria-hidden="true" v-on:click="startReply(item)"></i>
+                        <span class="mess-time">{{ prettyDate(item.created_at) }}</span>
+                    </div>
+                    <div v-if="item.seenUsers && item.seenUsers.length > 0" class="seen-user-box">
+                        <div
+                            v-for="(seenUser, index) in item.seenUsers"
+                            :key="'seen_user' + seenUser"
+                            :style="{ 'margin-left': index != 0 ? '3px' : '0' }"
+                        >
+                            <img
+                                v-if="people.find((p) => p.id == seenUser) && (people.find((p) => p.id == seenUser)).avatar"
+                                class="seen-avatar"
+                                :src="'https://dungmori.com/cdn/avatar/small' + '/' + (people.find((p) => p.id == seenUser)).avatar"
+                                :title="(people.find((p) => p.id == seenUser)).name"
+                            />
+                            <img
+                                v-else
+                                class="seen-avatar"
+                                src="https://dungmori.com/assets/img/default-avatar.jpg"
+                                :title="people.find((p) => p.id == seenUser) && (people.find((p) => p.id == seenUser)).name ? (people.find((p) => p.id == seenUser)).name : ''"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div v-if="notSeenMsgId" v-on:click="goToNotSeenMsg" class="a-cursor-pointer notSeenTextBox">
+                <i class="fa fa-angle-double-up" aria-hidden="true"></i>Tin chưa đọc
+            </div>
+            <div v-if="tagMsgId" v-on:click="goToTagMsg" class="a-cursor-pointer notSeenTextBox tagTextBox">
+                <i class="fa fa-angle-double-up" aria-hidden="true"></i>Nhắc đến bạn
+            </div>
+        </div>
+        <div class="chat-bottom">
+            <div class="preview-image" id="preview-image" :style="{ 'margin-top': rootMessage ? '-91px' : '-50px' }">
+                <div id="image-list"></div>
+                <i class="fa fa-arrow-circle-right send-btn" title="Gửi đi" onclick="sendImgMess()"></i>
+            </div>
+            <div class="reply-info-box" id="reply-info-container" v-if="rootMessage != null">
+                <div class="reply-title">Đang trả lời <b>{{ rootMessage.senderName }}</b></div>
+                <div v-if="rootMessage.type == 'text'" class="root-cm-content" style="-webkit-box-orient: vertical;">{{ rootMessage.content }}</div>
+                <div v-else-if="rootMessage.type == 'image'" class="root-cm-content">[Hình ảnh]</div>
+                <div v-else-if="rootMessage.type == 'file'" class="root-cm-content">[File]</div>
+                <i class="fa fa-times-circle a-cursor-pointer" aria-hidden="true" v-on:click="clearRootMessage"></i>
+            </div>
+            <div v-if="isTag && tagMembers.length > 0" class="member-tag-container" id="member-tag-container" :style="{ 'bottom': rootMessage ? '90px' : '49px' }">
+                <div
+                    v-for="(member, index) in tagMembers"
+                    class="member-tag-item a-cursor-pointer"
+                    :style="{ 'background-color': index == tagSelectedIndex ? '#dbdbdb' : '#f0f0f0' }"
+                    v-on:click="applyTagMemberName(member)"
+                >
+                    <img
+                        v-if="member.avatar"
+                        class="tag-avatar"
+                        :src="'https://dungmori.com/cdn/avatar/small' + '/' + member.avatar"
+                        :title="member.name"
+                    />
+                    <img
+                        v-else
+                        class="tag-avatar"
+                        src="https://dungmori.com/assets/img/default-avatar.jpg"
+                        :title="member.name"
+                    />
+                    {{ member.name }}
+                </div>
+            </div>
+            <div class="form-chat">
+                <div
+                    v-model="mess"
+                    contenteditable="true"
+                    v-on:keyup="keyTyping"
+                    @keydown.enter.exact.prevent="sendMess"
+                    class="mess"
+                    id="mess-input"
+                    placeholder="Nhập tin nhắn..."
+                    autocomplete="off"
+                    autofocus
+                    @keydown="onKeyDown($event)"
+                    @input="changeTextInput"
+                    data-emoji-contenteditable="true"
+                    :class=" false  ? '' : 'mess-incognito'"
+                ></div>
+                <form id="send_image_form" data-toggle="tooltip" data-placement="bottom" title="Dung lượng ảnh tối đa 3MB, Định dạng cho phép: jpg, png, jpeg, gif">
+                    <i class="fa fa-camera"></i>
+                    <input id="input_image_mess" type='file' name="input_image_mess[]" onchange="sendImgMess()" accept=".png, .jpg, .jpeg, .gif" multiple>
+                </form>
+                <form
+                    v-if=" false "
+                    id="send_file_form"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    title="Dung lượng ảnh tối đa 3MB, Định dạng cho phép: pdf, doc, docx, xlsx, xlsm, xlsb, xltx"
+                >
+                    <i class="fa fa-paperclip" aria-hidden="true"></i>
+                    <input id="input_file_mess" type='file' name="input_file_mess[]" onchange="sendFileMess()" accept=".pdf, .doc, .docx, .xlsx, .xlsm, .xlsb, .xltx" multiple>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="show_people" class="modal fade show-people" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Thành viên</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div><b>Quản trị</b></div>
+                <div
+                    v-for="(member, index) in testers"
+                    :key="member.id"
+                    class="flex items-center member-item"
+                    v-bind:style="index == 0 ? 'border: 0' : ''"
+                >
+                    <img
+                        v-if="member.avatar"
+                        class="member-avatar"
+                        :src="'https://dungmori.com/cdn/avatar/small' + '/' + member.avatar"
+                    />
+                    <img
+                        v-else
+                        class="member-avatar"
+                        src="https://dungmori.com/assets/img/default-avatar.jpg"
+                    />
+                    <div class="flex-1 member-name"><b>{{ member.name }}</b></div>
+                                    </div>
+                <div class="mt-3"><b>Thành viên</b></div>
+                <div
+                    v-for="(member, index) in members"
+                    :key="member.id"
+                    class="flex items-center member-item"
+                    v-bind:style="index == 0 ? 'border: 0' : ''"
+                >
+                    <img
+                        v-if="member.avatar"
+                        class="member-avatar"
+                        :src="'https://dungmori.com/cdn/avatar/small' + '/' + member.avatar"
+                    />
+                    <img
+                        v-else
+                        class="member-avatar"
+                        src="https://dungmori.com/assets/img/default-avatar.jpg"
+                    />
+                    <div class="flex-1 member-name">
+                        <b>{{ member.name }}</b><br>
+                        <span>{{ member.email }}</span>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>    <div id="show_history" class="modal fade show-people" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Lịch sử chuyển nhóm</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div v-if="histories.length == 0" class="text-center">Trống</div>
+                <div
+                    v-else
+                    v-for="(history, index) in histories"
+                    :key="history.id"
+                    class="flex align-items-center member-item"
+                    v-bind:style="index == 0 ? 'border: 0' : ''"
+                >
+                    <img
+                        v-if="history.user.avatar"
+                        class="member-avatar"
+                        :src="'https://dungmori.com/cdn/avatar/small' + '/' + history.user.avatar"
+                    />
+                    <img
+                        v-else
+                        class="member-avatar"
+                        src="https://dungmori.com/assets/img/default-avatar.jpg"
+                    />
+                    <div class="flex-1 member-name">
+                        <b>{{ history.user.name }}</b><br>
+                        <span>{{ history.user.email }}</span>
+                    </div>
+                    <div v-if="history.conversation_id == curConv.id" class="text-center">
+                        <div>Thêm vào</div>
+                        <div>{{ history.created_at }}</div>
+                    </div>
+                    <div v-else class="text-center">
+                        <div>Xóa đi</div>
+                        <div>{{ history.created_at }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    <div id="add_people" class="modal fade show-people" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Thêm thành viên</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div id="search_member_modal_body" class="modal-body">
+                <input v-model="searchMemberKey" type="text" class="search-con" placeholder="Tìm kiếm">
+                <div
+                    v-for="(member, index) in searchMembers"
+                    :key="member.id"
+                    class="flex align-items-center member-item"
+                    v-bind:style="{ 'border-top-width': index == 0 ? 0 : 1 + 'px', opacity: people.find((p) => p.id == member.user_id) ? 0.4 : 1 }"
+                >
+                    <img
+                        v-if="member.avatar"
+                        class="member-avatar"
+                        :src="'https://dungmori.com/cdn/avatar/small' + '/' + member.avatar"
+                    />
+                    <img
+                        v-else
+                        class="member-avatar"
+                        src="https://dungmori.com/assets/img/default-avatar.jpg"
+                    />
+                    <div class="flex-1 member-name"><b>{{ member.name }}</b></div>
+                                        <div style="width: 29px">
+                        <i v-if="!people.find((p) => p.id == member.user_id)" class="fa fa-user-plus a-cursor-pointer py-3 pl-3 pr-1" aria-hidden="true" v-on:click="addMember(member)"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    <div id="add_chat" class="modal fade show-people" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Chọn thành viên</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div id="search_member_chat_modal_body" class="modal-body">
+                <input v-model="searchMemberChatKey" type="text" class="search-con" placeholder="Tìm kiếm">
+                <div
+                    v-for="(member, index) in searchMembersChat"
+                    :key="member.id"
+                    class="flex align-items-center member-item"
+                    v-bind:style="{ 'border-top-width': index == 0 ? 0 : 1 + 'px' }"
+                >
+                    <img
+                        v-if="member.avatar"
+                        class="member-avatar"
+                        :src="'https://dungmori.com/cdn/avatar/small' + '/' + member.avatar"
+                    />
+                    <img
+                        v-else
+                        class="member-avatar"
+                        src="https://dungmori.com/assets/img/default-avatar.jpg"
+                    />
+                    <div class="flex-1 member-name"><b>{{ member.name }}</b></div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="switch_group" class="modal fade" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Chuyển đến nhóm chat khác</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div id="search_member_modal_body" class="modal-body">
+                <select v-model="switchConvId">
+                    <option v-for="(cg, index) in conversationGroups" :value="cg.id">{{ cg.title }} ({{ cg.count }} người)</option>
+                </select><br><br>
+                <button class="btn btn-primary" v-on:click="switchConvGroup">Save</button>
+            </div>
+        </div>
+    </div>
+</div>    <div id="search_msg" class="modal fade show-people" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Tìm tin nhắn</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div id="search_msg_modal_body" class="modal-body">
+                <input v-model="searchMsgKey" class="search-con" type="text" placeholder="Tìm tin nhắn">
+                <p class="search-msg-result-txt">Kết quả tìm kiếm</p>
+                <div
+                    v-for="(msg, index) in listSearchMsg"
+                    :key="'search-msg' + msg.id"
+                    class="flex align-items-center member-item a-cursor-pointer"
+                    v-bind:style="index == 0 ? 'border: 0' : ''"
+                    v-on:click="focusMessage(msg.id)"
+                >
+                    <img
+                        v-if="!msg.member"
+                        class="member-avatar"
+                        src="https://dungmori.com/assets/img/admin-ava.png"
+                    />
+                    <img
+                        v-else-if="msg.member.avatar"
+                        class="member-avatar"
+                        :src="'https://dungmori.com/cdn/avatar/small' + '/' + msg.member.avatar"
+                    />
+                    <img
+                        v-else
+                        class="member-avatar"
+                        src="https://dungmori.com/assets/img/default-avatar.jpg"
+                    />
+                    <div class="flex-1 member-name">
+                        <div v-if="msg.member"><b>{{ msg.member.name }}</b></div>
+                        <div v-else><b>DũngMori</b></div>
+                        <div v-html="renderContent(msg)" class="search-msg-content" style="-webkit-box-orient: vertical;"></div>
+                    </div>
+                    <div class="search-msg-time">{{ prettyDate(msg.created_at) }}</div>
+                </div>
+                <div v-if="searchMsgKey && !endOfSearchMsg" class="text-center">
+                    <img style="width: 15px;" src="https://dungmori.com/assets/img/fbload.gif"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    <div id="admin_select" class="modal fade show-people" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Đổi tài khoản</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div id="search_member_modal_body" class="modal-body">
+        <input v-model="adminSearchKey" type="text" class="search-con" placeholder="Tìm kiếm">
+        <div
+          v-for="(admin, index) in adminFilter"
+          :key="admin.id"
+          class="flex align-items-center member-item"
+          v-bind:style="{ 'border-top-width': index == 0 ? 0 : 1 + 'px' }"
+        >
+          <img
+            v-if="admin.avatar"
+            class="member-avatar"
+            :src="'https://dungmori.com/cdn/avatar/small' + '/' + admin.avatar"
+          />
+          <img
+            v-else
+            class="member-avatar"
+            src="https://dungmori.com/assets/img/default-avatar.jpg"
+          />
+          <div class="flex-1 member-name"><b>{{ admin.name }}</b></div>
+          <button class="btn btn-success" @click="login(admin.id)">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+    
+
+<div class="bg-[#07403F] text-white text-[14px] py-15 relative font-averta-regular float-left w-full px-2 lg:px-0">
+    <div class="container mx-auto">
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Về SOLIS Section -->
+            <div class="md:mr-4 mt-[20px]">
+                <div class="text-base font-bold border-b pb-2.5 font-averta-bold">Về SOLIS</div>
+                <div class="flex flex-col mt-2">
+                    <a class="text-white py-1.5 hover:text-green-300 transition-colors" 
+                       href="https://docs.google.com/document/d/1TfccP_Mxq0IMG-a6ZY3tP97GgqEubGtkv00nzO2hXsU/edit?usp=sharing" 
+                       target="_blank">
+                        Về chúng tôi
+                    </a>
+                    <a class="text-white py-1.5 hover:text-green-300 transition-colors" 
+                       href="https://docs.google.com/document/d/1oIJnLmKxlVnCqMp4jQCb3eTGDzynoZ6qPj_UrXhAhl0/edit?usp=sharing" 
+                       target="_blank">
+                        Chính sách đổi trả
+                    </a>
+                    <a class="text-white py-1.5 hover:text-green-300 transition-colors" 
+                       href="https://docs.google.com/document/d/1ZyUjmYxrS-VfzpBhkPQu6_DcXeNzcdEzyLrHIJaITac/edit?usp=sharing" 
+                       target="_blank">
+                        Chính sách gia hạn
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fanpage Section -->
+            <div class="md:mx-4 mt-[20px]">
+                <div class="text-base font-bold border-b pb-2.5 font-averta-bold">Fanpage</div>
+                <div class="flex flex-col mt-1.5">
+                    <a class="text-white py-1.5 hover:text-green-300 transition-colors" 
+                       href="https://www.facebook.com" 
+                       target="_blank">
+                        SOLIS
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="mt-[20px]">
+                <div class="text-base font-bold border-b pb-2.5 font-averta-bold">Liên Hệ</div>
+                <div class="mt-3">
+                    <a class="text-white block mb-2 hover:text-green-300 transition-colors" 
+                       href="https://maps.app.goo.gl/hfxELVJ7bjWpikVu8" 
+                       target="_blank">
+                        <span class="font-averta-bold font-bold">Trụ sở:</span> Đại học FPT
+                    </a>
+                    <a class="text-white mt-3 font-bold font-averta-bold hover:text-green-300 transition-colors" 
+                       href="tel:+84335101909">
+                        (+84) 335 101 909
+                    </a>
+                </div>
+                <div class="mt-4.5 flex flex-row pb-4.5 font-averta-bold font-bold">
+                    <div class="flex-1 md:flex block flex-row">
+                        <div class="flex-1 md:mr-3 mx-[0px]">Thứ 2-6: 7h00 - 21h00</div>
+                        <div class="flex-1 md:mx-3 mx-[0px] md:mt-0 mt-[8px]">Thứ 7: 8h00 - 15h00</div>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <div class="text-white">Email: 
+                        <a href="mailto:solis@gmail.com" 
+                           class="hover:text-green-300 transition-colors">
+                            solis@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class=" flex lg:hidden lg:scale-[65%] rounded-t-xl overflow-hidden origin-bottom bg-dmr-green fixed-panel-wrapper h-[120px] lg:h-auto w-screen lg:w-auto fixed right-0 lg:-right-[20px] bottom-0 z-[99] flex-row lg:flex-col gap-0 lg:gap-4 items-center justify-center">
+        <a href="https://dungmori.com/test-online"
+           class="w-[80px] h-full bg-dmr-green p-2 pt-4 lg:p-4 flex flex-col items-center justify-start gap-2">
+            <div class="w-[60px] h-[60px] bg-white aspect-square rounded-lg flex justify-center items-center p-2 flex-shrink-0">
+                <img src="https://dungmori.b-cdn.net/assets/img/new_home/06-2024/fixed-panel-test.svg" alt="" class="h-[50%]">
+            </div>
+            <div class="text-white font-averta-bold">Test</div>
+        </a>
+        <a href="https://docs.google.com/document/d/1SWZd1B1gYb6OMxtPLlGYvgHg1YTlxeMy7vd2SiRM1xw/edit?usp=sharing" target="_blank"
+           class="w-[80px] h-full bg-dmr-green p-2 pt-4 lg:p-4 flex flex-col items-center justify-start gap-2">
+            <div class="w-[60px] h-[60px] bg-white aspect-square rounded-lg flex justify-center items-center p-2 flex-shrink-0">
+                <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg"
+                     class="h-[50%]">
+                    <mask id="mask0_691_2593" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                          width="29" height="35">
+                        <path d="M28.6512 0.294434H0.308594V34.3056H28.6512V0.294434Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_691_2593)">
+                        <path d="M9.64087 12.7339C9.36209 12.7339 9.07003 12.6277 8.85763 12.402L6.62739 10.1717C6.18931 9.73367 6.18931 9.03008 6.62739 8.59199C7.06547 8.15391 7.76906 8.15391 8.20714 8.59199L9.64087 10.0257L13.3048 6.36177C13.7429 5.92368 14.4465 5.92368 14.8846 6.36177C15.3227 6.79985 15.3227 7.50344 14.8846 7.94152L10.4241 12.402C10.2117 12.6144 9.91965 12.7339 9.64087 12.7339Z"
+                              fill="#57D061"/>
+                        <path d="M6.58666 24.6816H21.9726C23.0347 24.6816 23.0479 23.0222 21.9726 23.0222H6.58666C5.52464 23.0222 5.51136 24.6816 6.58666 24.6816Z"
+                              fill="#57D061"/>
+                        <path d="M6.58666 27.4426H14.4721C15.5342 27.4426 15.5474 25.7832 14.4721 25.7832H6.58666C5.52464 25.7832 5.51136 27.4426 6.58666 27.4426Z"
+                              fill="#57D061"/>
+                        <path d="M1.71549 34.0409C1.07828 34.0409 0.560547 33.5232 0.560547 32.886V1.71575C0.560547 1.07854 1.07828 0.560791 1.71549 0.560791H18.7211C19.0264 0.560791 19.3184 0.680268 19.5441 0.892672L28.0403 9.38883C28.2527 9.60123 28.3722 9.89329 28.3722 10.1986V32.8727C28.3722 33.5099 27.8544 34.0276 27.2172 34.0276H1.71549V34.0409ZM2.87044 31.731H26.0755V11.3668H18.7211C18.0838 11.3668 17.5661 10.8491 17.5661 10.2119V2.85742H2.87044V31.731ZM19.876 9.05695H24.4427L19.876 4.49027V9.05695Z"
+                              fill="#18393A"/>
+                        <path d="M9.64099 12.4681C9.41531 12.4681 9.20291 12.3751 9.0436 12.2158L6.81336 9.98559C6.48148 9.65371 6.48148 9.12271 6.81336 8.79083C6.97267 8.63153 7.18507 8.5386 7.41075 8.5386C7.63643 8.5386 7.84883 8.63153 8.00813 8.79083L9.64099 10.4237L13.5041 6.56058C13.6634 6.40128 13.8758 6.30835 14.1015 6.30835C14.3271 6.30835 14.5395 6.40128 14.6988 6.56058C15.0307 6.89246 15.0307 7.43676 14.6988 7.75536L10.2384 12.2158C10.0791 12.3751 9.86667 12.4681 9.64099 12.4681Z"
+                              fill="#57D061"/>
+                        <path d="M6.58765 24.416C6.16284 24.416 6.05664 24.0576 6.05664 23.8584C6.05664 23.6593 6.16284 23.2876 6.58765 23.2876H21.9736C22.3984 23.2876 22.5046 23.646 22.5046 23.8452C22.5046 24.0443 22.3984 24.416 21.9736 24.416H6.58765Z"
+                              fill="#57D061"/>
+                        <path d="M6.58765 27.1767C6.16284 27.1767 6.05664 26.8183 6.05664 26.6192C6.05664 26.42 6.16284 26.0483 6.58765 26.0483H14.4731C14.8979 26.0483 15.0041 26.4068 15.0041 26.6059C15.0041 26.805 14.8979 27.1767 14.4731 27.1767H6.58765Z"
+                              fill="#57D061"/>
+                    </g>
+                    <path d="M7.30433 20.5918C6.77332 20.5918 6.30869 20.4325 5.92371 20.1404C5.75113 20.0077 5.6582 19.8218 5.6582 19.5962C5.6582 19.4103 5.72458 19.2377 5.85733 19.1182C5.99008 18.9855 6.14939 18.9191 6.33524 18.9191C6.48127 18.9191 6.62729 18.9722 6.76005 19.0651C6.9459 19.1979 7.13175 19.2775 7.29106 19.2775C7.53001 19.2775 7.76896 19.1979 7.76896 18.6536V16.0384C7.76896 15.8393 7.83534 15.68 7.96809 15.5339C8.11412 15.4012 8.2867 15.3215 8.47255 15.3215C8.6584 15.3215 8.83098 15.3879 8.97701 15.5207C9.10976 15.6667 9.18941 15.8393 9.18941 16.0251V18.6934C9.18941 19.2908 9.01684 19.7687 8.68495 20.1006C8.35307 20.4325 7.88844 20.6051 7.30433 20.6051V20.5918Z"
+                          fill="#18393A"/>
+                    <path d="M10.6231 20.5126C10.424 20.5126 10.2647 20.4462 10.1187 20.3134C9.9859 20.1674 9.90625 19.9948 9.90625 19.809V16.0123C9.90625 15.8132 9.97263 15.6538 10.1054 15.5078C10.2514 15.3751 10.424 15.2954 10.6098 15.2954C10.7957 15.2954 10.9683 15.3618 11.1143 15.4945C11.247 15.6406 11.3267 15.8131 11.3267 15.999V19.1851H13.1056C13.2914 19.1851 13.4375 19.2514 13.5702 19.3709C13.703 19.5037 13.7693 19.663 13.7693 19.8488C13.7693 20.0347 13.703 20.1807 13.5835 20.3134C13.4507 20.4462 13.2914 20.5126 13.1056 20.5126H10.6098H10.6231Z"
+                          fill="#18393A"/>
+                    <path d="M14.8868 20.566C14.7009 20.566 14.5284 20.4997 14.3823 20.3669C14.2363 20.2209 14.1699 20.0483 14.1699 19.8624V16.0657C14.1699 15.8799 14.2363 15.7073 14.369 15.5613C14.5151 15.4152 14.6877 15.3489 14.8735 15.3489H16.3072C16.9179 15.3489 17.4091 15.5214 17.7808 15.8533C18.1392 16.1852 18.3251 16.6366 18.3251 17.1941C18.3251 17.8048 18.1127 18.2694 17.6879 18.6146C17.3029 18.9199 16.7984 19.0792 16.201 19.0792H15.5771V19.8624C15.5771 20.0616 15.5107 20.2209 15.378 20.3669C15.2319 20.5129 15.0594 20.5793 14.8735 20.5793L14.8868 20.566ZM16.2541 17.7782C16.4665 17.7782 16.6258 17.7251 16.7586 17.6057C16.8648 17.4995 16.9179 17.38 16.9179 17.2207C16.9179 16.9286 16.8382 16.6498 16.2409 16.6498H15.6036V17.765H16.2674L16.2541 17.7782Z"
+                          fill="#18393A"/>
+                    <path d="M20.6076 20.5657C20.4217 20.5657 20.2492 20.4993 20.1031 20.3666C19.9704 20.2206 19.8907 20.048 19.8907 19.8621V16.6893H19.0544C18.8685 16.6893 18.7225 16.623 18.5898 16.4902C18.457 16.3574 18.3906 16.1982 18.3906 16.0256C18.3906 15.853 18.457 15.6804 18.5898 15.5609C18.7225 15.4282 18.8818 15.3618 19.0544 15.3618H22.1475C22.3334 15.3618 22.4794 15.4282 22.6121 15.5609C22.7449 15.6937 22.8113 15.853 22.8113 16.0256C22.8113 16.1982 22.7449 16.3574 22.6121 16.4902C22.4794 16.623 22.3201 16.6893 22.1475 16.6893H21.3112V19.8621C21.3112 20.0612 21.2448 20.2206 21.112 20.3666C20.966 20.5126 20.7934 20.579 20.6076 20.579V20.5657Z"
+                          fill="#18393A"/>
+                </svg>
+
+            </div>
+            <div class="text-white font-averta-bold text-xs">Cửa hàng</div>
+        </a>
+
+    </div>
+    <div class=" hidden lg:flex lg:scale-[65%] rounded-t-xl origin-bottom fixed-panel-wrapper h-[60px] lg:h-auto w-screen lg:w-auto fixed right-0 lg:-right-[20px] bottom-0 z-[999] flex-row lg:flex-col gap-0 lg:gap-4 items-center">
+
+
+        <a href="https://docs.google.com/document/d/1SWZd1B1gYb6OMxtPLlGYvgHg1YTlxeMy7vd2SiRM1xw/edit?usp=sharing" onclick="ga('send', 'event', 'Right menu', 'click', 'Store right side')" target="_blank"
+           class="transition-all hover:scale-105 h-full border-r border-white lg:border-r-0 lg:h-auto w-1/4 p-2 lg:p-0 cursor-pointer text-white hover:text-white lg:w-[100px] aspect-auto lg:aspect-square rounded-none lg:rounded-full bg-[#118C60] hover:bg-[#EC6E23] flex flex-col items-center justify-center gap-0">
+            <svg width="48" height="42" viewBox="0 0 48 42" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 class="w-6 lg:w-[40px]">
+                <path d="M41.646 36.0479H14.1906C12.0255 36.0479 10.2684 34.2907 10.2684 32.1257V30.1646C10.2684 29.7763 10.3821 29.3997 10.5979 29.0781L13.916 24.1008L6.34619 7.44717L5.08324 4.67417H2.42399C1.34146 4.67025 0.462891 3.79168 0.462891 2.70915C0.462891 1.62662 1.34146 0.748047 2.42399 0.748047H6.34619C7.11495 0.748047 7.8131 1.1991 8.1308 1.89725L9.39375 4.67025H43.6071C45.7722 4.67025 47.5293 6.4274 47.5293 8.59245C47.5293 8.89838 47.4587 9.19647 47.3214 9.47102L39.477 25.1598C39.1437 25.8227 38.4651 26.2424 37.7238 26.2424H17.2029L14.1906 30.7568V32.1257H41.646C42.7285 32.1257 43.6071 33.0042 43.6071 34.0868C43.6071 35.1693 42.7285 36.0479 41.646 36.0479ZM17.4146 22.3202H36.5119L43.3718 8.59637H11.1744L17.4146 22.3202Z"
+                      fill="white"/>
+                <path d="M37.7269 41.5925C39.8931 41.5925 41.6491 39.8364 41.6491 37.6702C41.6491 35.5041 39.8931 33.748 37.7269 33.748C35.5607 33.748 33.8047 35.5041 33.8047 37.6702C33.8047 39.8364 35.5607 41.5925 37.7269 41.5925Z"
+                      fill="white"/>
+                <path d="M14.1917 41.5925C16.3579 41.5925 18.1139 39.8364 18.1139 37.6702C18.1139 35.5041 16.3579 33.748 14.1917 33.748C12.0256 33.748 10.2695 35.5041 10.2695 37.6702C10.2695 39.8364 12.0256 41.5925 14.1917 41.5925Z"
+                      fill="white"/>
+            </svg>
+
+            <span class="hidden lg:flex font-beanbag uppercase text-xs">Cửa hàng</span>
+        </a>
+
+        
+        <div class="transition-all hover:scale-105 h-full border-r border-white lg:border-r-0 lg:h-auto group cursor-pointer text-white w-1/4 lg:w-[100px] aspect-auto lg:aspect-square rounded-none lg:rounded-full bg-[#118C60] hover:bg-[#EC6E23] flex flex-col items-center justify-center gap-2"
+             onclick="ga('send', 'event', 'Right menu', 'click', 'Chat right side'); showChatbox()">
+            <svg width="42" height="38" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 class="w-6 lg:w-[40px]">
+                <path d="M21.0298 0.00783166C9.64407 0.00783166 0.380859 8.38874 0.380859 18.6888C0.380859 28.9889 9.64407 37.3698 21.0298 37.3698C24.9127 37.3698 28.6641 36.4014 31.9383 34.5527L38.9803 37.2466C39.2107 37.3346 39.441 37.3698 39.6549 37.3698C40.1979 37.3698 40.7408 37.1233 41.1357 36.6831C41.6951 36.0493 41.8432 35.1337 41.5306 34.3414L38.9968 27.9149C40.7737 25.0978 41.6951 21.9285 41.6951 18.6712C41.6951 8.37115 32.4319 -0.00976562 21.0462 -0.00976562L21.0298 0.00783166ZM34.7847 28.4959L35.9694 31.5067L32.4154 30.151C31.856 29.9397 31.2308 29.9925 30.7043 30.327C27.8579 32.1053 24.5014 33.0385 21.0133 33.0385C11.8653 33.0385 4.42838 26.6119 4.42838 18.6888C4.42838 10.7657 11.8653 4.33915 21.0133 4.33915C30.1613 4.33915 37.5982 10.7657 37.5982 18.6888C37.5982 21.3827 36.7098 24.0237 35.048 26.3126C34.5873 26.9289 34.4886 27.774 34.7847 28.4959ZM13.7409 17.157C14.1194 17.562 14.3333 18.1254 14.3333 18.6888C14.3333 18.8297 14.3168 18.9705 14.3004 19.1114C14.2675 19.2522 14.2346 19.3931 14.1852 19.5163C14.1358 19.6396 14.07 19.7629 13.9877 19.8861C13.9219 20.0093 13.8232 20.115 13.7409 20.2206C13.6422 20.3263 13.5435 20.4143 13.4283 20.4847C13.3132 20.5728 13.198 20.6256 13.0828 20.6784C12.9676 20.7312 12.836 20.7841 12.7044 20.8017C12.5728 20.8369 12.4411 20.8369 12.3095 20.8369C11.783 20.8369 11.2565 20.608 10.8781 20.203C10.7794 20.0974 10.6971 19.9918 10.6313 19.8685C10.5655 19.7453 10.4996 19.622 10.4503 19.4987C10.4009 19.3755 10.368 19.2346 10.3351 19.0938C10.3187 18.9529 10.3022 18.8121 10.3022 18.6712C10.3022 18.5304 10.3187 18.3895 10.3351 18.2486C10.368 18.1078 10.4009 17.9669 10.4503 17.8437C10.4996 17.7204 10.5655 17.5972 10.6313 17.474C10.7135 17.3507 10.7958 17.2451 10.8781 17.1394C11.3552 16.6288 12.0463 16.3999 12.7044 16.5408C12.836 16.5584 12.9512 16.6112 13.0828 16.664C13.198 16.7168 13.3296 16.7873 13.4283 16.8577C13.5435 16.9457 13.6422 17.0338 13.7409 17.1218V17.157ZM23.0042 18.2663C23.0206 18.4071 23.0371 18.548 23.0371 18.6888C23.0371 18.8297 23.0371 18.9705 23.0042 19.1114C22.9712 19.2522 22.9383 19.3931 22.889 19.5163C22.8396 19.6396 22.7738 19.7629 22.6915 19.8861C22.6257 20.0093 22.527 20.115 22.4447 20.2206C22.0663 20.6256 21.5398 20.8545 21.0133 20.8545C20.8817 20.8545 20.7501 20.8545 20.6184 20.8193C20.4868 20.8017 20.3716 20.7488 20.24 20.696C20.1248 20.6432 20.0097 20.5728 19.8945 20.5024C19.7793 20.4143 19.6806 20.3439 19.5819 20.2382C19.4832 20.1326 19.4009 20.0269 19.3351 19.9037C19.2693 19.7804 19.2034 19.6572 19.1541 19.534C19.1047 19.4107 19.0718 19.2698 19.0389 19.129C19.0225 18.9881 19.006 18.8473 19.006 18.7064C19.006 18.5656 19.0225 18.4247 19.0389 18.2839C19.0718 18.143 19.1047 18.0022 19.1541 17.8789C19.2034 17.7557 19.2693 17.6324 19.3351 17.5092C19.4173 17.3859 19.4996 17.2803 19.5819 17.1746C19.6806 17.069 19.7793 16.9809 19.8945 16.9105C20.0097 16.8225 20.1248 16.7697 20.24 16.7168C20.3716 16.664 20.4868 16.6112 20.6184 16.5936C21.2766 16.4528 21.9841 16.6816 22.4447 17.1922C22.5435 17.2979 22.6257 17.4035 22.6915 17.5268C22.7738 17.65 22.8232 17.7733 22.889 17.8965C22.9383 18.0198 22.9712 18.1606 23.0042 18.3015V18.2663ZM31.7244 18.2663C31.7409 18.4071 31.7573 18.548 31.7573 18.6888C31.7573 18.8297 31.7573 18.9705 31.7244 19.1114C31.6915 19.2522 31.6586 19.3931 31.6092 19.5163C31.5599 19.6396 31.4941 19.7629 31.4118 19.8861C31.346 20.0093 31.2473 20.115 31.165 20.2206C31.0663 20.3263 30.9676 20.4143 30.8524 20.4847C30.7372 20.5728 30.622 20.6256 30.5069 20.6784C30.3917 20.7312 30.2601 20.7841 30.1284 20.8017C29.9968 20.8369 29.8652 20.8369 29.7336 20.8369C29.2071 20.8369 28.6805 20.608 28.3021 20.203C28.2034 20.0974 28.1211 19.9918 28.0553 19.8685C27.9895 19.7453 27.9237 19.622 27.8743 19.4987C27.825 19.3755 27.7921 19.2346 27.7592 19.0938C27.7427 18.9529 27.7263 18.8121 27.7263 18.6712C27.7263 18.5304 27.7427 18.3895 27.7592 18.2486C27.7921 18.1078 27.825 17.9669 27.8743 17.8437C27.9237 17.7204 27.9895 17.5972 28.0553 17.474C28.1376 17.3507 28.2199 17.2451 28.3021 17.1394C28.7793 16.6288 29.4703 16.3999 30.1284 16.5408C30.2601 16.5584 30.3752 16.6112 30.5069 16.664C30.622 16.7168 30.7537 16.7873 30.8524 16.8577C30.9676 16.9457 31.0663 17.0338 31.165 17.1218C31.2637 17.2274 31.346 17.3331 31.4118 17.4563C31.4941 17.5796 31.5434 17.7028 31.6092 17.8261C31.6586 17.9493 31.6915 18.0902 31.7244 18.231V18.2663Z"
+                      fill="white"/>
+            </svg>
+            <span class="hidden lg:flex font-beanbag uppercase">                    Chatbot
+                </span>
+        </div>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        let surveyId = null; // Biến để lưu survey_id
+        let showSurveyPopup = false;
+
+        if (showSurveyPopup) {
+            $.ajax({
+                url: '/survey/detail',
+                success: function (res) {
+                    if (res.data != null) {
+                        let survey = res.data
+                        surveyId = survey.id;
+                        $("#survey_modal_label").text(survey.title)
+                        if (survey.question.length > 0) {
+                            renderQuestions(survey.question)
+                        }
+                    }
+                    $('#survey_modal').modal('show');
+                }
+            })
+        }
+        $('#survey_modal').on('hidden.bs.modal', function () {
+            console.log(`vao day`)
+            $.ajax({
+                url: '/survey/close-popup',
+                success: function (res) {
+                }
+            })
+
+        });
+
+        $('#save_survey_btn').on('click', function () {
+            let surveyResponses = [];
+
+            $('input[type=radio]:checked').each(function () {
+                let questionId = $(this).attr('name').split('_')[1]; // Tên input có dạng question_ID
+                let answerValue = $(this).val(); // Lấy giá trị của radio button (Có hoặc Không)
+
+                surveyResponses.push({
+                    question_id: questionId,
+                    answer_id: answerValue
+                });
+            });
+
+            if (surveyResponses.length === $('.question_item').length) {
+                $.ajax({
+                    url: '/survey/save',
+                    type: 'POST',
+                    data: {
+                        survey_responses: surveyResponses,
+                        survey_id: surveyId,
+                        _token: $('meta[name="csrf-token"]').attr('content')
+                    },
+                    success: function (res) {
+                        if (res.code === 200) {
+                            alert('Khảo sát đã được lưu!');
+                            $('#survey_modal').modal('hide');
+                        } else {
+                            alert('Có lỗi xảy ra khi lưu khảo sát.');
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.log('Error:', error);
+                        alert('Có lỗi xảy ra khi gửi dữ liệu.');
+                    }
+                });
+            } else {
+                alert('Bạn chưa trả lời hết các câu hỏi.');
+            }
+        });
+    })
+
+    // Hàm render câu hỏi ra modal
+    function renderQuestions(questions) {
+        $('#survey_modal_body').empty();
+
+        // Duyệt qua từng câu hỏi và thêm vào modal
+        questions.forEach(function (question, index) {
+            console.log(`question: `, question, index)
+
+            // Khởi tạo phần HTML cho câu hỏi
+            let questionHtml = `
+                <div class="question_item" id="question_item_${index + 1}">
+                    <div>Câu ${index + 1}: ${question.question}</div>
+                    <div class="form-group">`;
+
+            // Lặp qua các đáp án của câu hỏi để tạo radio button
+            question.answer.forEach(function (answer) {
+                questionHtml += `
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline_${answer.id}" name="question_${question.id}" class="custom-control-input" value="${answer.id}">
+                <label class="custom-control-label" for="customRadioInline_${answer.id}">${answer.answer}</label>
+            </div>`;
+            });
+
+            // Kết thúc phần HTML của câu hỏi
+            questionHtml += `</div></div>`;
+
+            $('#survey_modal_body').append(questionHtml);
+        });
+    }
+</script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.querySelectorAll('img').forEach(function (img) {
+                img.onerror = function () {
+                    this.style.display = 'none';
+                };
+            })
+        });
+    </script>
+    <script type="text/javascript">
+        function showChatbox() {
+            if (typeof chatbox !== 'undefined' && chatbox) {
+                chatbox.initChat();
+                $("#chat-box").css('display', 'flex');
+                $("#mess-input").focus();
+                chatbox.goToBottom();
+            }
+        }
+                var chatUser = localStorage.getItem('incognito_user');
+        if (chatUser) {
+            chatUser = parseInt(chatUser);
+        } else {
+            chatUser = (Math.floor(Math.random() * 1000000) + 1) * -1;
+            localStorage.setItem('incognito_user', chatUser);
+        }
+                if (chatUser) {
+            var socketServer = "wss://chat.dungmori.com";
+
+            if (!socket) {
+                var socket = io.connect(socketServer, {
+                    query: {
+                        type: 'user',
+                        from: 'web',
+                        userId: chatUser
+                    }
+                });
+            }
+
+            // Check receive new message
+                        socket.on('send_new_message', async function (message) {
+                if (typeof chatbox !== 'undefined') {
+                    chatbox.receiveNewMsg(message);
+                }
+                if (typeof notiCount !== 'undefined') {
+                    notiCount.updateMessageCount(message);
+                }
+                if (message && parseInt(message.receiverId) == chatUser) {
+                    if ($('#chat-box').css('display') === 'none') {
+                        showChatbox();
+                        chatbox.goToBottom();
+                    }
+                }
+            });
+            
+            socket.on('send_new_message_group_enc', async function (message) {
+                if (typeof chatbox !== 'undefined') {
+                    message = JSON.parse(dmsg(message));
+                    chatbox.receiveNewMsg(message);
+                }
+                if (typeof notiCount !== 'undefined') {
+                    notiCount.updateMessageCount(message);
+                }
+            });
+        }
+    </script>
+
+    
+    <script type="text/javascript">
+        var lastFingerprint = null;
+        var embed = "";
+
+        $(".dropdown-parent").hover(function () {
+            $(this).click();
+        }, function () {
+        });
+    </script>
+    <script type="text/javascript">
+        function goTo(url) {
+            window.location.href = url;
+        }
+
+        function goToWindow(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+
+    <script src="https://dungmori.b-cdn.net/plugin/vue/vue.min.js" type="text/javascript"></script>
+    <script src="https://dungmori.b-cdn.net/plugin/lazysizes/lazysizes.min.js" type="text/javascript"></script>
+    <script src="https://dungmori.b-cdn.net/plugin/toastr/toastr.min.js" type="text/javascript"></script>
+
+    
+    <script src="https://dungmori.b-cdn.net/assets/js/app.js?1735549892" type="text/javascript"></script>
+
+    
+    <script type="text/javascript">
+        var enableFIV = false;
+            </script>
+
+    
+    <script type="text/x-template" id="modal-template">
+  <transition name="v-modal">
+    <div class="v-modal-mask">
+      <div class="v-modal-wrapper" @mousedown="$emit('close')">
+        <div class="v-modal-container" @mousedown.stop :style="{ width: width, backgroundColor: bgColor, shadow: shadow, padding: padding }">
+          <div class="v-modal-header">
+            <slot name="header">
+
+            </slot>
+          </div>
+
+          <div class="v-modal-body">
+            <slot name="body">
+
+            </slot>
+          </div>
+        </div>
+      </div>
+    </div>
+  </transition>
+</script>
+  <script type="text/x-template" id="home-feedback-template">
+  <div class="student-feedback-slider">
+    <div class="student-feedback-item" v-for="feedback in listFeedbacks">
+      <p class="feeling">{{feedback.content}}</p>
+      <div class="row student-info-box">
+        <div class="col-lg-3 student-info-avatar">
+          <img v-if="feedback.user.avatar != null" :src="url + '/cdn/avatar/default/' + feedback.user.avatar" class="student-avatar img-circle"/>
+          <img v-if="feedback.user.avatar == null" :src="url + '/assets/img/default-avatar.jpg'" class="student-avatar img-circle"/>
+        </div>
+        <div class="col-lg-9 student-info">
+          <b class="student-name green-text">{{feedback.user.name}}</b>
+          <span>{{feedback.user_job}}</span><br>
+          <span><i>-&nbsp{{feedback.current_course}}&nbsp-</i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+    <script src="https://dungmori.b-cdn.net/plugin/vanilla-emoji-picker/emojiPicker.js?1691378137"
+            type="text/javascript"></script>
+    <script src="https://dungmori.b-cdn.net/plugin/vanilla-emoji-picker/emojiContenteditable.js?1724647351"
+            type="text/javascript"></script>
+    
+    <script src="https://dungmori.b-cdn.net/plugin/moment/moment.min.js?1724647351"
+            type="text/javascript">
+        moment.locale('vi')
+    </script>
+    <script src="https://dungmori.b-cdn.net/plugin/crypto/crypto.js?1724647351"></script>
+            <script src="https://dungmori.b-cdn.net/assets/js/crypto.js?1724647351" type="text/javascript"></script>
+    <script src="https://dungmori.b-cdn.net/plugin/gsap/gsap.min.js?1724647351"
+            type="text/javascript"></script>
+    <script src="https://dungmori.b-cdn.net/plugin/gsap/MotionPathPlugin.min.js?1724647351"
+            type="text/javascript"></script>
+    <script src="https://dungmori.b-cdn.net/plugin/gsap/ScrollTrigger.min.js?1724647351"
+            type="text/javascript"></script>
+    
+            <script src="/solis-cdn/assets/js/login.js"
+                type="text/javascript"></script>
+        <script src="/solis-cdn/assets/js/chat.js"
+            type="text/javascript"></script>
+    <script src="https://dungmori.b-cdn.net/assets/js/modal.js?1735549892" type="text/javascript"></script>
+
+    <script src="https://dungmori.b-cdn.net/plugin/slick/slick.min.js"></script>
+    <script src="https://dungmori.b-cdn.net/assets/js/course/basic.js"></script>
+    <script src="https://dungmori.b-cdn.net/plugin/axios/axios.min.js"></script>
+    <script src="https://dungmori.b-cdn.net/plugin/element-ui/element-ui.min.js"></script>
+    <script src="https://dungmori.b-cdn.net/plugin/element-ui/vi.js"></script>
+    <script type="text/javascript">
+        const apiLesson = axios.create({
+            baseURL: "/khoa-hoc",
+            headers: {
+                "Content-Type": "application/json",
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            withCredentials: true,
+        });
+
+        new Vue({
+            el: "#container_home_2024",
+            data: {
+                status_add_code: 0,
+                loading_btn_add_code: false,
+                add_code_to_user: {
+                    code_input: null,
+                    course_id: null
+                }
+            },
+            methods: {
+                async addCodeToUser() {
+                    this.loading_btn_add_code = true
+                    await apiLesson.post('/add-code-lesson-to-user', this.add_code_to_user).then(res => {
+                        console.log(`res: `, res)
+                        if (res.data.error_code) {
+                            this.status_add_code = 1
+                            return;
+                        }
+                        console.log('vao day')
+                        localStorage.setItem('congratulate_code_try_lesson', '1');
+                        window.location.href = '/account/courses'
+                    }).catch(err => {
+                        console.log(`err: `, err)
+                    })
+                    this.loading_btn_add_code = false
+                },
+                showDialogLogin() {
+                    $("#modalEnterCouponCode").modal("hide");
+                    $("#btn-login").on('click', function (e) {
+                        console.log(`vao dc day`)
+                    });
+                }
+            },
+            watch: {
+                'add_code_to_user.code_input': {
+                    handler: function (val, oldVal) {
+                        this.status_add_code = 0;
+                    },
+                    deep: true
+                }
+            },
+            mounted() {
+
+            }
+        })
+    </script>
+    <script>
+        // use a script tag or an external JS file
+        document.addEventListener("DOMContentLoaded", (event) => {
+            // gsap.utils.toArray(".floating").forEach(randomFloat);
+
+            // function randomFloat(element) {
+            //     gsap.to(element, {
+            //         x: 'random(-50, 20, 5)',
+            //         y: 'random(-50, 10, 3)',
+            //         ease: "sine.inOut",
+            //         duration: gsap.utils.random([2, 4]),
+            //         onComplete: () => randomFloat(element)
+            //     });
+            // }
+        });
+
+    </script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.registerPlugin(MotionPathPlugin);
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.set('.stat-item', {autoAlpha: 0});
+
+            gsap.to(".parallax-bg", {
+                scrollTrigger: {
+                    scrub: 1
+                },
+                yPercent: (i, target) => {
+                    return -ScrollTrigger.maxScroll(window) * target.dataset.speed
+                },
+                ease: "none"
+            });
+
+
+            ScrollTrigger.batch(".home-stats", {
+                onEnter: batch => {
+                    batch.forEach((section, i) => {
+                        const items = section.querySelectorAll(".stat-item");
+                        gsap.to(items, {
+                            autoAlpha: 1,
+                            yPercent: 0,
+                            duration: 0.4,
+                            ease: "power1.inOut",
+                            stagger: 0.1,
+                            delay: 0.2,
+                            scrub: true,
+                        });
+                        // gsap.from(section.querySelectorAll(".stat-number"), {
+                        //     textContent: 0,
+                        //     duration: 1,
+                        //     ease: "power1.in",
+                        //     snap: { textContent: 1 },
+                        //     stagger: {
+                        //         each: 1.0,
+                        //         onUpdate: function() {
+                        //             this.targets()[0].innerHTML = numberWithCommas(this.targets()[0].textContent);
+                        //         },
+                        //     }
+                        // });
+                    });
+                },
+                start: "top 50%",
+                end: "bottom 5%",
+                markers: false,
+                scrub: true
+            });
+
+            const circlePath = MotionPathPlugin.convertToPath("#holder", false)[0];
+            circlePath.id = "circlePath";
+            document.querySelector(".wheel-svg").prepend(circlePath);
+
+            let items = gsap.utils.toArray(".wheel-item"),
+                numItems = items.length,
+                itemStep = 1 / numItems,
+                wrapProgress = gsap.utils.wrap(0, 1),
+                snap = gsap.utils.snap(itemStep),
+                wrapTracker = gsap.utils.wrap(0, numItems),
+                tracker = {item: 0};
+            items[0].classList.add('active');
+            hideItems(0);
+
+            let step = 1 / 8;
+
+            const tl = gsap.timeline({paused: true});
+            tl.to('.wheel-wrapper', {
+                rotation: 360,
+                transformOrigin: 'center',
+                duration: 1.5,
+                ease: 'none'
+            });
+
+            tl.to(items, {
+                rotation: "-=360",
+                transformOrigin: 'center',
+                duration: 1.5,
+                ease: 'none'
+            }, 0);
+
+            tl.to(tracker, {
+                item: numItems,
+                duration: 1.5,
+                ease: 'none',
+                modifiers: {
+                    item: value => wrapTracker(numItems - Math.round(value))
+                }
+            }, 0);
+            items.forEach(function (el, i) {
+                el.addEventListener("click", function () {
+                    var current = tracker.item,
+                        activeItem = i;
+
+                    if (i === current) {
+                        return;
+                    }
+
+                    if (document.querySelector('.wheel-item.active')) {
+                        document.querySelector('.wheel-item.active').classList.remove('active');
+                    }
+
+                    items[activeItem].classList.add('active');
+
+                    hideItems(activeItem);
+
+                    var diff = current - i;
+
+                    if (Math.abs(diff) < numItems / 2) {
+                        moveWheel(diff * itemStep);
+                    } else {
+                        var amt = numItems - Math.abs(diff);
+
+                        if (current > i) {
+                            moveWheel(amt * -itemStep);
+                        } else {
+                            moveWheel(amt * itemStep);
+                        }
+                    }
+                });
+            });
+
+            // const nextTl = gsap.timeline({ paused:true });
+            // nextTl.to('.wrapper', {
+            //  rotation: "-=360",
+            //  transformOrigin: 'center',
+            //  duration: 1,
+            //  ease: 'none'
+            // });
+            // nextTl.to(items, {
+            //  rotation: 360,
+            //  transformOrigin: 'center',
+            //  duration: 1,
+            //  ease: 'none'
+            // });
+
+            function numberWithCommas(x) {
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+
+            function hideItems(activeItem) {
+                const totalItems = numItems;
+                const itemsToShowCount = 5;
+                const halfToShow = Math.floor(itemsToShowCount / 2);
+
+                const itemsToShow = [];
+                for (let i = -halfToShow; i <= halfToShow; i++) {
+                    itemsToShow.push((activeItem + i + totalItems) % totalItems);
+                }
+
+                const upperItem = (activeItem - 1 + totalItems) % totalItems
+                const lowerItem = (activeItem + 1) % totalItems
+                const topItem = (activeItem - 2 + totalItems) % totalItems
+                const botItem = (activeItem + 2) % totalItems
+
+                items.forEach((item, index) => {
+                    if (itemsToShow.includes(index)) {
+                        item.classList.remove('opacity-0');
+                    } else {
+                        item.classList.add('opacity-0');
+                    }
+
+                    if (index === activeItem) {
+                        item.classList.remove('wheel-upper');
+                    } else if (upperItem === index) {
+                        item.classList.add('wheel-upper');
+                    } else {
+                        item.classList.remove('wheel-upper');
+                    }
+
+                    if (index === activeItem) {
+                        item.classList.remove('wheel-lower');
+                    } else if (lowerItem === index) {
+                        item.classList.add('wheel-lower');
+                    } else {
+                        item.classList.remove('wheel-lower');
+                    }
+
+                    if (index === activeItem) {
+                        item.classList.remove('wheel-top');
+                    } else if (topItem === index) {
+                        item.classList.add('wheel-top');
+                    } else {
+                        item.classList.remove('wheel-top');
+                    }
+
+                    if (index === activeItem) {
+                        item.classList.remove('wheel-bottom');
+                    } else if (botItem === index) {
+                        item.classList.add('wheel-bottom');
+                    } else {
+                        item.classList.remove('wheel-bottom');
+                    }
+
+                });
+                gsap.set(items, {
+                    motionPath: {
+                        path: circlePath,
+                        align: circlePath,
+                        alignOrigin: [0.5, 0.5],
+                        end: i => {
+                            if (i === upperItem) {
+                                return i / numItems + 0.040
+                            }
+                            if (i === lowerItem) {
+                                return i / numItems - 0.040
+                            }
+                            if (i === topItem) {
+                                return i / numItems + 0.050
+                            }
+                            if (i === botItem) {
+                                return i / numItems - 0.050
+                            }
+                            return i / numItems
+                        }
+                    },
+                });
+            }
+
+            function moveWheel(amount, i, index) {
+
+                let progress = tl.progress();
+                tl.progress(wrapProgress(snap(tl.progress() + amount)));
+                let next = tracker.item;
+                tl.progress(progress);
+
+                document.querySelector('.wheel-item.active').classList.remove('active');
+                items[next].classList.add('active');
+
+                gsap.to(tl, {
+                    progress: snap(tl.progress() + amount),
+                    modifiers: {
+                        progress: wrapProgress
+                    }
+                });
+            }
+
+            var interval = 0;
+            setInterval(() => {
+                if (interval === 8) {
+                    interval = 0;
+                } else {
+                    interval++;
+                }
+                if (!$(".open")[0]) {
+                    // items[interval].click()
+                }
+            }, 5000);
+        })
+    </script>
+    <script type="text/javascript">
+        $('#home-header-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            arrow: false,
+            infinite: true,
+            speed: 500,
+            adaptiveHeight: true,
+            fade: true,
+            customPaging: function (slider, i) {
+                // this example would render "tabs" with titles
+                return '<span class="dot"></span>';
+            },
+        });
+        $('#logos-slider').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            speed: 2000,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 7,
+            slidesToScroll: 3,
+            infinite: true,
+            focusOnSelect: true,
+            pauseOnHover: true,
+            dots: true,
+            customPaging: function (slider, i) {
+                // this example would render "tabs" with titles
+                return '<span class="dot"></span>';
+            },
+            responsive: [
+                {
+                    breakpoint: 820,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 750,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '20px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+        $('#feedback-slider').slick({
+            speed: 500,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 1,
+            infinite: true,
+        });
+        $('#news_slick').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true,
+            loop: true,
+            slidesToShow: 3,
+            dots: false,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            variableHeight: true,
+            responsive: [
+                {
+                    breakpoint: 820,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 750,
+                    settings: {
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        centerMode: true,
+                        centerPadding: '20px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+        $('#social_slick').slick({
+            centerMode: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            loop: true,
+            infinite: true,
+            slidesToShow: isMobile ? 1 : 3,
+            dots: false,
+            variableWidth: true
+        });
+
+
+
+        $('#tc_slick').slick({
+            autoplay: false,
+            autoplaySpeed: 3000,
+            arrows: false,
+            loop: true,
+            slidesToShow: 1,
+            dots: true
+        });
+
+        var tcInterval = setInterval(() => {
+            if ($('.w-\\[440px\\]').parent().parent().next().length === 0) {
+                if (!$(".open")[0]) {
+                    $(".tc-box").first().click();
+                }
+            } else {
+                if (!$(".open")[0]) {
+                    $('.w-\\[440px\\]').parent().parent().next().children(1).eq(1).click();
+                }
+            }
+        }, 5000);
+
+        $(".tc-box").click(function () {
+            $('.tc-img').removeClass('w-[440px]');
+            $('.tc-img').addClass('w-[190px]');
+            $(this).find('img:first').removeClass('w-[190px]');
+            $(this).find('img:first').addClass('w-[440px]');
+            $(".tc-box").prev().addClass('hidden');
+            $(this).prev().removeClass('hidden');
+            $(this).prev().addClass('block');
+
+            clearInterval(tcInterval);
+            tcInterval = setInterval(() => {
+                if ($('.w-\\[440px\\]').parent().parent().next().length === 0) {
+                    if (!$(".open")[0]) {
+                        $(".tc-box").first().click();
+                    }
+                } else {
+                    if (!$(".open")[0]) {
+                        $('.w-\\[440px\\]').parent().parent().next().children(1).eq(1).click();
+                    }
+                }
+            }, 5000);
+        });
+    </script>
+        
+    
+    
+
+    
+
+
+    
+            <script type="text/javascript">
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-98604763-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+        <!-- Facebook Pixel Code -->
+        <script type="text/javascript">
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '511629070106054');
+            fbq('track', 'PageView');
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none"
+                 src="https://www.facebook.com/tr?id=511629070106054&ev=PageView&noscript=1"/>
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+
+        <!-- Hotjar Tracking Code for www.dungmori.com -->
+        <script type="text/javascript">
+            (function (h, o, t, j, a, r) {
+                h.hj = h.hj || function () {
+                    (h.hj.q = h.hj.q || []).push(arguments)
+                };
+                h._hjSettings = {hjid: 1928619, hjsv: 6};
+                a = o.getElementsByTagName('head')[0];
+                r = o.createElement('script');
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+        </script>
+    
+    
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-131128751-4" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-131128751-4');
+    </script>
+
+    <script type="text/javascript">
+        (function () {
+            var ta = document.createElement('script');
+            ta.type = 'text/javascript';
+            ta.async = true;
+            ta.src = 'https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid=BPU67QVC2JVVVND7OQEG';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ta, s);
+        })();
+        
+        
+            </script>
+
+    <script type="text/javascript">
+        
+
+
+        var element = $('#app-btns');
+        var bounce = gsap.to(element, {duration: 0.6, y: 10, ease: "circ.in", repeat: -1, yoyo: true, paused: true})
+
+        function scrollToId(id) {
+            if (document.getElementById(id)) {
+                document.getElementById(id).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center',
+                    inline: 'center'
+                });
+            }
+            bounce.play()
+        }
+
+        function stopBounce() {
+            bounce.pause()
+        }
+    </script>
+            <script type="text/javascript">
+            var search = window.location.search;
+            var qs = new URLSearchParams(search);
+            if (qs.has("action")) {
+                var action = qs.get("action");
+                if (action == "login") {
+                    var loginBtn = document.getElementById('text-login');
+                    loginBtn.click();
+                }
+            }
+        </script>
+
+</div>
+</body>
+</html>
