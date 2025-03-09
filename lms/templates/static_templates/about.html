@@ -1,0 +1,39 @@
+<%namespace name='static' file='../static_content.html'/>
+<%page expression_filter="h"/>
+<%! from django.utils.translation import gettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("About")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("About")}</%block>
+        </h1>
+        <p>
+            <%block name="pagecontent">
+                ${page_content or _("")}
+                <h2>About Solis</h2>
+                <p>
+                    Solis là nền tảng Edtech tiên phong cung cấp dịch vụ dạy ngoại ngữ và hỗ trợ cộng đồng lao động xuất khẩu Việt Nam ở nước ngoài. Ứng dụng trí tuệ nhân tạo để xây dựng lộ trình học, phòng giao tiếp ảo, AR, chatbot hỗ trợ 24/7 và nhiều tiện ích khác.
+                </p>
+                <p>
+                    Tên "Solis" xuất phát từ tiếng Latinh, nghĩa là "mặt trời", biểu tượng cho tri thức, sự dẫn đường và cơ hội mới. Với mô hình Công ty TNHH, Solis duy trì quyền kiểm soát chặt chẽ, linh hoạt và quản lý tinh gọn – lý tưởng cho giai đoạn khởi nghiệp ban đầu.
+                </p>
+                <p>
+                    <strong>Tầm nhìn:</strong> Trở thành nền tảng hàng đầu về giáo dục ngoại ngữ cho lao động xuất khẩu Việt Nam đến năm 2030, giúp họ tự tin hội nhập quốc tế.
+                </p>
+                <p>
+                    <strong>Sứ mệnh:</strong> 
+                    <br />– Nâng tầm lao động Việt qua nền tảng học tập tiên tiến.
+                    <br />– Xây dựng cộng đồng lao động đoàn kết, chia sẻ kinh nghiệm và phát triển bền vững.
+                </p>
+            </%block>
+        </p>
+        <!-- NEW IN INDIGO: add graphic image -->
+        <div class="graphic-img">
+            <img src="${static.url('images/about.svg')}" alt="Runs on Tutor" />
+            <img class="dark" src="${static.url('images/about-dark.svg')}" alt="Runs on Tutor" />
+        </div>
+    </section>
+</main>
