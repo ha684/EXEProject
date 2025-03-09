@@ -1,0 +1,47 @@
+$primary: #e67e22;
+$primary-light: #f8f6f2;
+
+// Theme fonts
+$font-family-title: 'Inter', sans-serif;
+$serif: Crimson;
+$f-sans-serif: Crimson, 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+// Initialize the Open edX Bootstrap theme
+@import 'edx-bootstrap/sass/open-edx/theme';
+
+
+// Introducing new variables
+
+$dark: #111827;
+$light-dark: #374151;
+$big-screen: 1200px;
+
+
+
+// Introducing dark-theme variables
+
+// Moon-themed dark mode
+$primary-d: #a4b0be; // Soft blue-gray like moonlight
+$primary-light-d: #1e2636; // Deep blue-gray background
+$light-drak-d: #2f3542; // Slightly lighter blue-gray
+$text-color-d: #dfe4ea; // Soft white like moonlight
+$text-color-primary: #f1f2f6; // Brighter white for primary text
+$border-color-d: #747d8c; // Muted blue-gray borders
+$light-overlay-d: #2c3e50; // Blue-gray overlay
+$danger-d: #ff7675; // Soft red for danger
+$success-d: #7bed9f; // Soft green for success
+$btn-color-d: #273c75; // Deep blue for buttons
+$body-bg-d: #0f1624; // Very dark blue-black like night sky
+
+$warning-400: #ffe340;
+$page-color-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+// Sun-themed light mode
+$body-bg: #fffdf5; // Warm light background like sunlight
+$container-bg: #fff9e6; // Slightly warmer container background
+$secondary: #f39c12; // Golden yellow
+$link-color: #d35400; // Deep orange for links
+$btn-primary-bg: #e67e22; // Sun orange for primary buttons
+$btn-primary-border: darken($btn-primary-bg, 5%);
+$body-color: #4a4a4a; // Dark gray text
+$headings-color: #7d5a00; // Golden brown for headings
